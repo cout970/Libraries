@@ -16,5 +16,6 @@ Written in Kotlin: This allow the user to use the operator overloading in Kotlin
 * Implementations of mutable and immutable vectors
 * Vectors for 2D, 3D and 4D
 * A lot of Utilities for vectors (if you have any suggestion feel free to create a issue)
+
 ##Dependencies
 The only dependency of this library is the standard library of Kotlin 
