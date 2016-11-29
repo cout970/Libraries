@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kobalt/Build.kt.iml" filepath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollisionLib/CollisionLib.iml" filepath="$PROJECT_DIR$/CollisionLib/CollisionLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GlUtilities/GlUtilities.iml" filepath="$PROJECT_DIR$/GlUtilities/GlUtilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libraries/Libraries.iml" filepath="$PROJECT_DIR$/Libraries/Libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MatrixLib/MatrixLib.iml" filepath="$PROJECT_DIR$/MatrixLib/MatrixLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjLib/ObjLib.iml" filepath="$PROJECT_DIR$/ObjLib/ObjLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaytraceLib/RaytraceLib.iml" filepath="$PROJECT_DIR$/RaytraceLib/RaytraceLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VectorLib/VectorLib.iml" filepath="$PROJECT_DIR$/VectorLib/VectorLib.iml" />
     </modules>
   </component>
 </project>
