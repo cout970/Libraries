@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    {
+      "taskName": "MatrixLib:compileTest",
+      "inputChecksum": "1f0527868e138e2a462e74b138bc509a",
+      "outputChecksum": "05091c046861331be29b5fab3952e7ef"
+    },
+    {
+      "taskName": "RaytraceLib:compileTest",
+      "inputChecksum": "6912d8d4f20e94589fa7953b64923c5c",
+      "outputChecksum": "1256da6c5e1602d683c09588636fc16c"
+    },
+    {
+      "taskName": "Libraries:compile",
+      "outputChecksum": "f44248439dff37de49b5d66d5206eae2"
+    },
+    {
+      "taskName": "GlUtilities:compileTest",
+      "inputChecksum": "d3d0c13b8344fbbb3f0426f9952b7787",
+      "outputChecksum": "e9bfea2d8f969edd4d76c88fe632d7ec"
+    },
+    {
+      "taskName": "CollisionLib:compileTest",
+      "inputChecksum": "1c830e345b56f86ef2de02c166c6fdcb",
+      "outputChecksum": "65110857c55f03196b96b2c55fec385c"
+    },
+    {
+      "taskName": "ObjLib:compileTest",
+      "inputChecksum": "7a0a9098be68c1348cc71dcd88dbed0b",
+      "outputChecksum": "d59b4ebe360297787b5642d333911e8f"
+    },
+    {
+      "taskName": "ObjLib:compile",
+      "inputChecksum": "7a0a9098be68c1348cc71dcd88dbed0b",
+      "outputChecksum": "aace49473d153ad2dce267e59e309c9c"
+    },
+    {
+      "taskName": "MatrixLib:compile",
+      "inputChecksum": "f85b64b4820f8b89d306f206a2e617d6",
+      "outputChecksum": "5a230a78568ae62046ceb4dd814f0441"
+    },
+    {
+      "taskName": "GlUtilities:compile",
+      "inputChecksum": "d64c4b3b087e239b9c2ff6b307c8bba0",
+      "outputChecksum": "ed37e833f26e3112147d9cfc614dfcfe"
+    },
+    {
+      "taskName": "VectorLib:compileTest",
+      "inputChecksum": "0df429634b4c29955b4e95b7978c463f",
+      "outputChecksum": "5dd9f033c06fe0615e4345a54f07a980"
+    },
+    {
+      "taskName": "CollisionLib:compile",
+      "inputChecksum": "2b5d3d17552373814d1857cdb0007628",
+      "outputChecksum": "6588e8c0b10d91676e8b79319d3d0431"
+    },
+    {
+      "taskName": "RaytraceLib:compile",
+      "inputChecksum": "19a7950f5509bf105cfcaee797e9f5e8",
+      "outputChecksum": "d8797f74867a196e1672330f18469a5c"
+    },
+    {
+      "taskName": "VectorLib:compile",
+      "inputChecksum": "69e17abf63f5e6a306d19adc29f483a3",
+      "outputChecksum": "99807307d7dd5dfd0f595bfbd6cab775"
+    }
+  ]
+}
