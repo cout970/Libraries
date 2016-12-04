@@ -72,24 +72,24 @@ val IMatrix4.m33f: Float get() = m33.toFloat()
 
 //@formatter:off
 var IMutableMatrix2.m00f: Float get() = m00.toFloat(); set(i) { m00 = i}
-var IMutableMatrix2.m01f: Float get() = m01.toFloat(); set(i) { m00 = i}
-var IMutableMatrix3.m02f: Float get() = m02.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m03f: Float get() = m03.toFloat(); set(i) { m00 = i}
+var IMutableMatrix2.m01f: Float get() = m01.toFloat(); set(i) { m01 = i}
+var IMutableMatrix3.m02f: Float get() = m02.toFloat(); set(i) { m02 = i}
+var IMutableMatrix4.m03f: Float get() = m03.toFloat(); set(i) { m03 = i}
 
-var IMutableMatrix2.m10f: Float get() = m10.toFloat(); set(i) { m00 = i}
-var IMutableMatrix2.m11f: Float get() = m11.toFloat(); set(i) { m00 = i}
-var IMutableMatrix3.m12f: Float get() = m12.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m13f: Float get() = m13.toFloat(); set(i) { m00 = i}
+var IMutableMatrix2.m10f: Float get() = m10.toFloat(); set(i) { m10 = i}
+var IMutableMatrix2.m11f: Float get() = m11.toFloat(); set(i) { m11 = i}
+var IMutableMatrix3.m12f: Float get() = m12.toFloat(); set(i) { m12 = i}
+var IMutableMatrix4.m13f: Float get() = m13.toFloat(); set(i) { m13 = i}
 
-var IMutableMatrix3.m20f: Float get() = m20.toFloat(); set(i) { m00 = i}
-var IMutableMatrix3.m21f: Float get() = m21.toFloat(); set(i) { m00 = i}
-var IMutableMatrix3.m22f: Float get() = m22.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m23f: Float get() = m23.toFloat(); set(i) { m00 = i}
+var IMutableMatrix3.m20f: Float get() = m20.toFloat(); set(i) { m20 = i}
+var IMutableMatrix3.m21f: Float get() = m21.toFloat(); set(i) { m21 = i}
+var IMutableMatrix3.m22f: Float get() = m22.toFloat(); set(i) { m22 = i}
+var IMutableMatrix4.m23f: Float get() = m23.toFloat(); set(i) { m23 = i}
 
-var IMutableMatrix4.m30f: Float get() = m30.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m31f: Float get() = m31.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m32f: Float get() = m32.toFloat(); set(i) { m00 = i}
-var IMutableMatrix4.m33f: Float get() = m33.toFloat(); set(i) { m00 = i}
+var IMutableMatrix4.m30f: Float get() = m30.toFloat(); set(i) { m30 = i}
+var IMutableMatrix4.m31f: Float get() = m31.toFloat(); set(i) { m31 = i}
+var IMutableMatrix4.m32f: Float get() = m32.toFloat(); set(i) { m32 = i}
+var IMutableMatrix4.m33f: Float get() = m33.toFloat(); set(i) { m33 = i}
 //@formatter:on
 
 // Double
@@ -115,24 +115,24 @@ val IMatrix4.m33d: Double get() = m33.toDouble()
 
 //@formatter:off
 var IMutableMatrix2.m00d: Double get() = m00.toDouble(); set(i) { m00 = i}
-var IMutableMatrix2.m01d: Double get() = m01.toDouble(); set(i) { m00 = i}
-var IMutableMatrix3.m02d: Double get() = m02.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m03d: Double get() = m03.toDouble(); set(i) { m00 = i}
+var IMutableMatrix2.m01d: Double get() = m01.toDouble(); set(i) { m01 = i}
+var IMutableMatrix3.m02d: Double get() = m02.toDouble(); set(i) { m02 = i}
+var IMutableMatrix4.m03d: Double get() = m03.toDouble(); set(i) { m03 = i}
 
-var IMutableMatrix2.m10d: Double get() = m10.toDouble(); set(i) { m00 = i}
-var IMutableMatrix2.m11d: Double get() = m11.toDouble(); set(i) { m00 = i}
-var IMutableMatrix3.m12d: Double get() = m12.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m13d: Double get() = m13.toDouble(); set(i) { m00 = i}
+var IMutableMatrix2.m10d: Double get() = m10.toDouble(); set(i) { m10 = i}
+var IMutableMatrix2.m11d: Double get() = m11.toDouble(); set(i) { m11 = i}
+var IMutableMatrix3.m12d: Double get() = m12.toDouble(); set(i) { m12 = i}
+var IMutableMatrix4.m13d: Double get() = m13.toDouble(); set(i) { m13 = i}
 
-var IMutableMatrix3.m20d: Double get() = m20.toDouble(); set(i) { m00 = i}
-var IMutableMatrix3.m21d: Double get() = m21.toDouble(); set(i) { m00 = i}
-var IMutableMatrix3.m22d: Double get() = m22.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m23d: Double get() = m23.toDouble(); set(i) { m00 = i}
+var IMutableMatrix3.m20d: Double get() = m20.toDouble(); set(i) { m20 = i}
+var IMutableMatrix3.m21d: Double get() = m21.toDouble(); set(i) { m21 = i}
+var IMutableMatrix3.m22d: Double get() = m22.toDouble(); set(i) { m22 = i}
+var IMutableMatrix4.m23d: Double get() = m23.toDouble(); set(i) { m23 = i}
 
-var IMutableMatrix4.m30d: Double get() = m30.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m31d: Double get() = m31.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m32d: Double get() = m32.toDouble(); set(i) { m00 = i}
-var IMutableMatrix4.m33d: Double get() = m33.toDouble(); set(i) { m00 = i}
+var IMutableMatrix4.m30d: Double get() = m30.toDouble(); set(i) { m30 = i}
+var IMutableMatrix4.m31d: Double get() = m31.toDouble(); set(i) { m31 = i}
+var IMutableMatrix4.m32d: Double get() = m32.toDouble(); set(i) { m32 = i}
+var IMutableMatrix4.m33d: Double get() = m33.toDouble(); set(i) { m33 = i}
 //@formatter:on
 
 

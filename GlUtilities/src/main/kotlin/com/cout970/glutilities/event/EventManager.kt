@@ -34,12 +34,12 @@ object EventManager : IEventHandler {
         val mouseButtonCallback: GLFWMouseButtonCallback
         val scrollCallback: GLFWScrollCallback
         val cursorPosCallback: GLFWCursorPosCallback
-
         val charModsCallback: GLFWCharModsCallback
         val cursorEnterCallback: GLFWCursorEnterCallback
         val dropCallback: GLFWDropCallback
         val framebufferSizeCallback: GLFWFramebufferSizeCallback
         val windowSizeCallback: GLFWWindowSizeCallback
+        val windowPosCallback: GLFWWindowPosCallback
         val windowRefreshCallback: GLFWWindowRefreshCallback
         val windowIconifyCallback: GLFWWindowIconifyCallback
         val windowFocusCallback: GLFWWindowFocusCallback
@@ -52,11 +52,11 @@ object EventManager : IEventHandler {
             scrollCallback = GLFWScrollCallback.create { window, xOffset, yOffset -> fireEvent(EventMouseScroll(window, xOffset, yOffset)) }
             cursorPosCallback = GLFWCursorPosCallback.create { window, x, y -> fireEvent(EventCursorPos(window, x, y)) }
             charModsCallback = GLFWCharModsCallback.create { window, codePoint, mods -> fireEvent(EventCharMods(window, codePoint, mods)) }
-
             cursorEnterCallback = GLFWCursorEnterCallback.create { window, entered -> fireEvent(EventCursorEnter(window, entered)) }
             dropCallback = GLFWDropCallback.create { window, count, names -> fireEvent(EventFileDrop(window, count, names)) }
             framebufferSizeCallback = GLFWFramebufferSizeCallback.create { window, width, height -> fireEvent(EventFrameBufferSize(window, width, height)) }
             windowSizeCallback = GLFWWindowSizeCallback.create { window, width, height -> fireEvent(EventWindowSize(window, width, height)) }
+            windowPosCallback = GLFWWindowPosCallback.create { window, x, y -> fireEvent(EventWindowPos(window, x, y)) }
             windowRefreshCallback = GLFWWindowRefreshCallback.create { fireEvent(EventWindowRefresh(it)) }
             windowIconifyCallback = GLFWWindowIconifyCallback.create { window, iconified -> fireEvent(EventWindowIconify(window, iconified)) }
             windowFocusCallback = GLFWWindowFocusCallback.create { window, focused -> fireEvent(EventWindowFocus(window, focused)) }
@@ -67,12 +67,12 @@ object EventManager : IEventHandler {
             glfwSetMouseButtonCallback(windowID, mouseButtonCallback)
             glfwSetScrollCallback(windowID, scrollCallback)
             glfwSetCursorPosCallback(windowID, cursorPosCallback)
-
             glfwSetCharModsCallback(windowID, charModsCallback)
             glfwSetCursorEnterCallback(windowID, cursorEnterCallback)
             glfwSetDropCallback(windowID, dropCallback)
             glfwSetFramebufferSizeCallback(windowID, framebufferSizeCallback)
             glfwSetWindowSizeCallback(windowID, windowSizeCallback)
+            glfwSetWindowPosCallback(windowID, windowPosCallback)
             glfwSetWindowRefreshCallback(windowID, windowRefreshCallback)
             glfwSetWindowIconifyCallback(windowID, windowIconifyCallback)
             glfwSetWindowFocusCallback(windowID, windowFocusCallback)
@@ -90,6 +90,7 @@ object EventManager : IEventHandler {
             dropCallback.close()
             framebufferSizeCallback.close()
             windowSizeCallback.close()
+            windowPosCallback.close()
             windowRefreshCallback.close()
             windowIconifyCallback.close()
             windowFocusCallback.close()

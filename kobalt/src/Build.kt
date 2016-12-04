@@ -50,7 +50,7 @@ val matrixLib = project(vectorLib) {
     name = "MatrixLib"
     group = "com.cout970"
     artifactId = name
-    version = "0.0.3"
+    version = "0.0.4"
     directory = "MatrixLib"
 
     sourceDirectories {
@@ -158,7 +158,7 @@ val glUtilitiesLib = project(vectorLib, matrixLib) {
     name = "GlUtilities"
     group = "com.cout970"
     artifactId = name
-    version = "0.0.2"
+    version = "0.1.1"
     directory = "GlUtilities"
 
     sourceDirectories {
