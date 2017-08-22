@@ -8,7 +8,7 @@ import com.cout970.vector.api.IMutableVector3
 import com.cout970.vector.api.IQuaternion
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.api.IVector3
-import com.cout970.vector.extensions.*
+import com.cout970.vector.extensions.mutableVec3Of
 
 /**
  * Created by cout970 on 28/08/2016.
@@ -40,6 +40,8 @@ fun IMatrix2.getInverse(): IMatrix2 {
     return mat2Of(m00, m01, m10, m11)
 }
 
+
+
 fun IMatrix3.getInverse(): IMatrix3 {
     var s = determinant()
     s = 1.0 / s
@@ -56,46 +58,11 @@ fun IMatrix3.getInverse(): IMatrix3 {
 }
 //@formatter:on
 
-fun perspective(fov: Double, aspectRatio: Double, zFar: Double, zNear: Double): IMatrix4 {
-    val aux = Math.tan(fov / 2)
-    val m00 = 1 / aspectRatio * aux
-    val m11 = 1 / aux
-    val m22 = -(zFar + zNear) / (zFar - zNear)
-    val m32 = -1
-    val m23 = -(2 * zFar * zNear) / (zFar - zNear)
-    //@formatter:off
-    return mat4Of(
-            m00, 0,   0,   0,
-            0,   m11, 0,   0,
-            0,   0,   m22, m23,
-            0,   0,   m32, 0.0)
-    //@formatter:on
-}
-
-fun ortho(right: Double, left: Double, top: Double, bottom: Double, zFar: Double, zNear: Double): IMatrix4 {
-    val m00 = 2 / (right - left)
-    val m11 = 2 / (top - bottom)
-    val m22 = -2 / (zFar - zNear)
-    val m33 = 1
-
-    val m03 = -(right + left) / (right - left)
-    val m13 = -(top + bottom) / (top - bottom)
-    val m23 = -(zFar + zNear) / (zFar - zNear)
-    //@formatter:off
-    return mat4Of(
-            m00, 0,   0,   m03,
-            0,   m11, 0,   m13,
-            0,   0,   m22, m23,
-            0,   0,   0,   m33
-    )
-    //@formatter:on
-}
-
-
 fun IMutableMatrix4.translate(vec: IVector3) {
-    m30d += vec.xd
-    m31d += vec.yd
-    m32d += vec.zd
+    m30 = m00d * vec.xd + m10d * vec.yd + m20d * vec.zd + m30d
+    m31 = m01d * vec.xd + m11d * vec.yd + m21d * vec.zd + m31d
+    m32 = m02d * vec.xd + m12d * vec.yd + m22d * vec.zd + m32d
+    m33 = m03d * vec.xd + m13d * vec.yd + m23d * vec.zd + m33d
 }
 
 fun IMutableMatrix4.rotate(vec: IQuaternion) {
@@ -122,7 +89,13 @@ fun IMutableMatrix4.rotate(vec: IQuaternion) {
 
 fun IMutableMatrix4.scale(vec: IVector3) {
     m00d *= vec.xd
+    m01d *= vec.xd
+    m01d *= vec.xd
+    m10d *= vec.yd
     m11d *= vec.yd
+    m12d *= vec.yd
+    m20d *= vec.zd
+    m21d *= vec.zd
     m22d *= vec.zd
 }
 

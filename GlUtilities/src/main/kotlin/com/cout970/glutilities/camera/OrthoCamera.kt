@@ -1,6 +1,6 @@
 package com.cout970.glutilities.camera
 
-import com.cout970.matrix.extensions.ortho
+import com.cout970.matrix.extensions.ProjectionMatrixFactory
 
 
 /**
@@ -18,5 +18,5 @@ open class OrthoCamera(
         var zFar: Double
 ) : AbstractCamera() {
 
-    override fun getProjection() = ortho(left, right, bottom, top, zNear, zFar)
+    override fun getProjection() = ProjectionMatrixFactory.ortho(left, right, bottom, top, zNear, zFar)
 }

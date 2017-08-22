@@ -1,0 +1,3 @@
+rootProject.name = 'Libraries'
+
+include 'VectorLib', 'MatrixLib', 'RaytraceLib', 'ObjLib', "CollisionLib", "GlUtilities"

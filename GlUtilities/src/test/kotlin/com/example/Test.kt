@@ -13,15 +13,13 @@ import com.cout970.glutilities.texture.TextureLoader
 import com.cout970.glutilities.window.GLFWLoader
 import com.cout970.glutilities.window.WindowBuilder
 import com.cout970.vector.extensions.vec2Of
-import com.cout970.vector.extensions.xi
-import com.cout970.vector.extensions.yi
 import org.lwjgl.opengl.GL11
 import org.lwjgl.opengl.GL20
 import java.io.FileInputStream
 import java.util.*
 
 fun main(args: Array<String>) {
-    System.setProperty("org.lwjgl.librarypath", "I:/newWorkspace/Proyectos/Java_Kotlin/XLM/xlm/libs/native")
+//    System.setProperty("org.lwjgl.librarypath", "I:/newWorkspace/Proyectos/Java_Kotlin/XLM/xlm/libs/native")
     Game2.init()
 }
 
@@ -137,7 +135,7 @@ object Game2 {
         GLFWLoader.terminate()
     }
 
-    internal val shader_vertex = """
+    private val shader_vertex = """
 #version 400 core
 
 in vec3 pos;
@@ -151,7 +149,7 @@ void main(){
 }
         """
 
-    internal val shader_fragment = """
+    private val shader_fragment = """
 #version 400 core
 
 in vec2 pass_tex;

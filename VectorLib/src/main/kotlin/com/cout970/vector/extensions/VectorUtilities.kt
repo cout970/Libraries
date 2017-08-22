@@ -26,9 +26,9 @@ infix fun IVector2.distanceSq(other: IVector2) = (other - this).lengthSq()
 infix fun IVector3.distanceSq(other: IVector3) = (other - this).lengthSq()
 infix fun IVector4.distanceSq(other: IVector4) = (other - this).lengthSq()
 
-fun IVector2.transform(f: (Double) -> Double) = vec2Of(f(xd), f(yd))
-fun IVector3.transform(f: (Double) -> Double) = vec3Of(f(xd), f(yd), f(zd))
-fun IVector4.transform(f: (Double) -> Double) = vec4Of(f(xd), f(yd), f(zd), f(wd))
+inline fun IVector2.transform(f: (Double) -> Double) = vec2Of(f(xd), f(yd))
+inline fun IVector3.transform(f: (Double) -> Double) = vec3Of(f(xd), f(yd), f(zd))
+inline fun IVector4.transform(f: (Double) -> Double) = vec4Of(f(xd), f(yd), f(zd), f(wd))
 
 fun IVector2.ceil() = transform { Math.ceil(it) }
 fun IVector3.ceil() = transform { Math.ceil(it) }
@@ -168,11 +168,7 @@ fun IQuaternion.rotate(vec: IVector3): IVector3 {
             (xz2 - wy2) * vec.xd + (yz2 + wx2) * vec.yd + (1.0 - (x2sq + y2sq)) * vec.zd)
 }
 
-fun IVector4.fromAxisAngToQuat(): IQuaternion {
-    val sin = Math.sin(wd / 2)
-    val cos = Math.cos(wd / 2)
-    return quatOf(xd * sin, yd * sin, zd * sin, cos)
-}
+fun IVector4.fromAxisAngToQuat(): IQuaternion = quatOfAxisAngled(wd, xd, yd, zd)
 
 infix fun IVector2.min(other: IVector2) = vec2Of(Math.min(xd, other.xd), Math.min(yd, other.yd))
 infix fun IVector3.min(other: IVector3) = vec3Of(Math.min(xd, other.xd), Math.min(yd, other.yd), Math.min(zd, other.zd))

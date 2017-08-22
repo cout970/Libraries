@@ -11,15 +11,15 @@ interface IVectorFactory {
         var factory: IVectorFactory = VectorFactory
     }
 
-    fun vec2Of(x: Number, y: Number): IVector2
-    fun mutableVec2Of(x: Number, y: Number): IMutableVector2
+    fun vec2Of(x: Double, y: Double): IVector2
+    fun mutableVec2Of(x: Double, y: Double): IMutableVector2
 
-    fun vec3Of(x: Number, y: Number, z: Number): IVector3
-    fun mutableVec3Of(x: Number, y: Number, z: Number): IMutableVector3
+    fun vec3Of(x: Double, y: Double, z: Double): IVector3
+    fun mutableVec3Of(x: Double, y: Double, z: Double): IMutableVector3
 
-    fun vec4Of(x: Number, y: Number, z: Number, w: Number): IVector4
-    fun mutableVec4Of(x: Number, y: Number, z: Number, w: Number): IMutableVector4
+    fun vec4Of(x: Double, y: Double, z: Double, w: Double): IVector4
+    fun mutableVec4Of(x: Double, y: Double, z: Double, w: Double): IMutableVector4
 
-    fun quatOf(x: Number, y: Number, z: Number, w: Number): IQuaternion
-    fun mutableQuatOf(x: Number, y: Number, z: Number, w: Number): IMutableQuaternion
+    fun quatOf(x: Double, y: Double, z: Double, w: Double): IQuaternion
+    fun mutableQuatOf(x: Double, y: Double, z: Double, w: Double): IMutableQuaternion
 }

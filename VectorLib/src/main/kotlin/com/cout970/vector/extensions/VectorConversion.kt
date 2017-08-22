@@ -1,3 +1,7 @@
+@file:Suppress("unused", "NOTHING_TO_INLINE")
+@file:JvmName("Conv")
+
+
 package com.cout970.vector.extensions
 
 import com.cout970.vector.api.*
@@ -6,13 +10,16 @@ import com.cout970.vector.api.*
  * Created by cout970 on 17/08/2016.
  */
 
-fun IVector2.toVector3(z: Number): IVector3 = vec3Of(x, y, z)
-fun IVector2.toVector4(z: Number, w: Number): IVector4 = vec4Of(x, y, z, w)
-fun IVector3.toVector4(w: Number): IVector4 = vec4Of(x, y, z, w)
+fun Pair<Number, Number>.toIVector2(): IVector2 = vec2Of(first, second)
+fun Triple<Number, Number, Number>.toIVector3(): IVector3 = vec3Of(first, second, third)
 
-fun IMutableVector2.toVector3(z: Number): IMutableVector3 = mutableVec3Of(x, y, z)
-fun IMutableVector2.toVector4(z: Number, w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
-fun IMutableVector3.toVector4(w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
+inline fun IVector2.toVector3(z: Number): IVector3 = vec3Of(x, y, z)
+inline fun IVector2.toVector4(z: Number, w: Number): IVector4 = vec4Of(x, y, z, w)
+inline fun IVector3.toVector4(w: Number): IVector4 = vec4Of(x, y, z, w)
+
+inline fun IMutableVector2.toVector3(z: Number): IMutableVector3 = mutableVec3Of(x, y, z)
+inline fun IMutableVector2.toVector4(z: Number, w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
+inline fun IMutableVector3.toVector4(w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
 
 fun IVector2.toMutable(): IMutableVector2 = mutableVec2Of(x, y)
 fun IVector3.toMutable(): IMutableVector3 = mutableVec3Of(x, y, z)
@@ -27,4 +34,7 @@ fun IVector3.asImmutable() = if(this is IMutableVector3) vec3Of(x, y, z) else th
 fun IVector4.asImmutable() = if(this is IMutableVector4) vec4Of(x, y, z, w) else this
 fun IQuaternion.asImmutable() = if(this is IMutableQuaternion) quatOf(x, y, z, w) else this
 
-fun IVector4.asQuaternion(): IQuaternion = if(this is IQuaternion) quatOf(x, y, z, w) else this as IQuaternion
+fun IMutableVector2.asImmutable() = vec2Of(x, y)
+fun IMutableVector3.asImmutable() = vec3Of(x, y, z)
+fun IMutableVector4.asImmutable() = vec4Of(x, y, z, w)
+fun IMutableQuaternion.asImmutable() = quatOf(x, y, z, w)

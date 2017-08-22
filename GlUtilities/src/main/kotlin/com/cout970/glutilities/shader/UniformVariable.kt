@@ -1,14 +1,10 @@
 package com.cout970.glutilities.shader
 
 import com.cout970.matrix.api.IMatrix4
-import com.cout970.matrix.extensions.*
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.api.IVector3
-import com.cout970.vector.extensions.xf
-import com.cout970.vector.extensions.yf
-import com.cout970.vector.extensions.zf
-import org.lwjgl.BufferUtils
 import org.lwjgl.opengl.GL20.*
+import org.lwjgl.system.MemoryUtil
 
 /**
  * Created by cout970 on 30/07/2016.
@@ -47,7 +43,7 @@ open class UniformVariable(val uniformID: Int) {
      * Stores a Matrix4d in the variable
      */
     fun setMatrix4(m: IMatrix4) {
-        val buffer = BufferUtils.createFloatBuffer(16)
+        val buffer = MemoryUtil.memAllocFloat(16)
         buffer.put(m.m00f)
         buffer.put(m.m01f)
         buffer.put(m.m02f)
@@ -66,6 +62,7 @@ open class UniformVariable(val uniformID: Int) {
         buffer.put(m.m33f)
         buffer.flip()
         glUniformMatrix4fv(uniformID, false, buffer)
+        MemoryUtil.memFree(buffer)
     }
 
     class UniformVariableArray(uniformID: Int) : UniformVariable(uniformID) {
@@ -81,7 +78,7 @@ open class UniformVariable(val uniformID: Int) {
         fun setBoolean(index: Int, bool: Boolean) = glUniform1f(uniformID + index, (if (bool) 1 else 0).toFloat())
 
         fun setMatrix4(index: Int, m: IMatrix4) {
-            val buffer = BufferUtils.createFloatBuffer(16)
+            val buffer = MemoryUtil.memAllocFloat(16)
             buffer.put(m.m00f)
             buffer.put(m.m01f)
             buffer.put(m.m02f)
@@ -100,6 +97,7 @@ open class UniformVariable(val uniformID: Int) {
             buffer.put(m.m33f)
             buffer.flip()
             glUniformMatrix4fv(uniformID + index, false, buffer)
+            MemoryUtil.memFree(buffer)
         }
     }
 }

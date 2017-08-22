@@ -1,3 +1,5 @@
+@file:JvmName("Ops")
+
 package com.cout970.vector.extensions
 
 import com.cout970.vector.api.IQuaternion
@@ -98,17 +100,11 @@ operator fun Vector4f.times(other: Float) = vec4Of(xf * other, yf * other, zf * 
 operator fun IVector4.times(other: Number) = vec4Of(xd * other.toDouble(), yd * other.toDouble(), zd * other.toDouble(), wd * other.toDouble())
 
 //quaternions
-operator fun Quaternioni.times(b: Quaternioni) = quatOf(
-        w * b.x + x * b.w + y * b.z - z * b.y,
-        w * b.y - x * b.z + y * b.w + z * b.x,
-        w * b.z + x * b.y - y * b.x + z * b.w,
-        w * b.w - x * b.x - y * b.y - z * b.z)
-
 operator fun Quaternionf.times(b: Quaternionf) = quatOf(
-        w * b.x + x * b.w + y * b.z - z * b.y,
-        w * b.y - x * b.z + y * b.w + z * b.x,
-        w * b.z + x * b.y - y * b.x + z * b.w,
-        w * b.w - x * b.x - y * b.y - z * b.z)
+        wf * b.xf + xf * b.wf + yf * b.zf - zf * b.yf,
+        wf * b.yf - xf * b.zf + yf * b.wf + zf * b.xf,
+        wf * b.zf + xf * b.yf - yf * b.xf + zf * b.wf,
+        wf * b.wf - xf * b.xf - yf * b.yf - zf * b.zf)
 
 operator fun IQuaternion.times(b: IQuaternion) = quatOf(
         wd * b.xd + xd * b.wd + yd * b.zd - zd * b.yd,

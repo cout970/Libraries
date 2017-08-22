@@ -7,21 +7,19 @@ import com.cout970.vector.api.*
  */
 object VectorFactory : IVectorFactory {
 
-    override fun vec2Of(x: Number, y: Number): IVector2 = Vector2d(x.toDouble(), y.toDouble())
+    override fun vec2Of(x: Double, y: Double): IVector2 = Vector2d(x, y)
 
-    override fun mutableVec2Of(x: Number, y: Number): IMutableVector2 = MutableVector2d(x.toDouble(), y.toDouble())
+    override fun mutableVec2Of(x: Double, y: Double): IMutableVector2 = MutableVector2d(x, y)
 
+    override fun vec3Of(x: Double, y: Double, z: Double): IVector3 = Vector3d(x, y, z)
 
-    override fun vec3Of(x: Number, y: Number, z: Number): IVector3 = Vector3d(x.toDouble(), y.toDouble(), z.toDouble())
+    override fun mutableVec3Of(x: Double, y: Double, z: Double): IMutableVector3 = MutableVector3d(x, y, z)
 
-    override fun mutableVec3Of(x: Number, y: Number, z: Number): IMutableVector3 = MutableVector3d(x.toDouble(), y.toDouble(), z.toDouble())
+    override fun vec4Of(x: Double, y: Double, z: Double, w: Double): IVector4 = Vector4d(x, y, z, w)
 
+    override fun mutableVec4Of(x: Double, y: Double, z: Double, w: Double): IMutableVector4 = MutableVector4d(x, y, z, w)
 
-    override fun vec4Of(x: Number, y: Number, z: Number, w: Number): IVector4 = Vector4d(x.toDouble(), y.toDouble(), z.toDouble(), w.toDouble())
+    override fun quatOf(x: Double, y: Double, z: Double, w: Double): IQuaternion = Quaterniond(x, y, z, w)
 
-    override fun mutableVec4Of(x: Number, y: Number, z: Number, w: Number): IMutableVector4 = MutableVector4d(x.toDouble(), y.toDouble(), z.toDouble(), w.toDouble())
-
-    override fun quatOf(x: Number, y: Number, z: Number, w: Number): IQuaternion = Quaterniond(x.toDouble(), y.toDouble(), z.toDouble(), w.toDouble())
-
-    override fun mutableQuatOf(x: Number, y: Number, z: Number, w: Number): IMutableQuaternion = MutableQuaterniond(x.toDouble(), y.toDouble(), z.toDouble(), w.toDouble())
+    override fun mutableQuatOf(x: Double, y: Double, z: Double, w: Double): IMutableQuaternion = MutableQuaterniond(x, y, z, w)
 }

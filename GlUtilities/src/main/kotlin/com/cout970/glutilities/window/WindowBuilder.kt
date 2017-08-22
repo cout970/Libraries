@@ -2,8 +2,6 @@ package com.cout970.glutilities.window
 
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.extensions.vec2Of
-import com.cout970.vector.extensions.xi
-import com.cout970.vector.extensions.yi
 import org.lwjgl.glfw.GLFW.*
 import org.lwjgl.opengl.GL
 import org.lwjgl.system.MemoryUtil
@@ -11,7 +9,7 @@ import org.lwjgl.system.MemoryUtil
 /**
  * Created by cout970 on 25/07/2016.
  */
-class WindowBuilder {
+class WindowBuilder() {
 
     var title = "GLFW Window"
     var pos: IVector2? = null

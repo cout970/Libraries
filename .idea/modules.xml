@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kobalt/Build.kt.iml" filepath="$PROJECT_DIR$/kobalt/Build.kt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CollisionLib/CollisionLib.iml" filepath="$PROJECT_DIR$/CollisionLib/CollisionLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GlUtilities/GlUtilities.iml" filepath="$PROJECT_DIR$/GlUtilities/GlUtilities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Libraries/Libraries.iml" filepath="$PROJECT_DIR$/Libraries/Libraries.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MatrixLib/MatrixLib.iml" filepath="$PROJECT_DIR$/MatrixLib/MatrixLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ObjLib/ObjLib.iml" filepath="$PROJECT_DIR$/ObjLib/ObjLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RaytraceLib/RaytraceLib.iml" filepath="$PROJECT_DIR$/RaytraceLib/RaytraceLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/VectorLib/VectorLib.iml" filepath="$PROJECT_DIR$/VectorLib/VectorLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib.iml" filepath="$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib.iml" group="CollisionLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib_main.iml" group="CollisionLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CollisionLib/CollisionLib_test.iml" group="CollisionLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities.iml" filepath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities.iml" group="GlUtilities" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" group="GlUtilities" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" group="GlUtilities" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Libraries.iml" filepath="$PROJECT_DIR$/.idea/modules/Libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib.iml" group="MatrixLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_main.iml" group="MatrixLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_test.iml" group="MatrixLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib.iml" filepath="$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib.iml" group="ObjLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib_main.iml" group="ObjLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ObjLib/ObjLib_test.iml" group="ObjLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib.iml" group="RaytraceLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_main.iml" group="RaytraceLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_test.iml" group="RaytraceLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib.iml" group="VectorLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_main.iml" group="VectorLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_test.iml" group="VectorLib" />
     </modules>
   </component>
 </project>

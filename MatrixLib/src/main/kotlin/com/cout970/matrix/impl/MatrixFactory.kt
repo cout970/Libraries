@@ -7,49 +7,47 @@ import com.cout970.matrix.api.*
  */
 object MatrixFactory : IMatrixFactory {
 
-    override fun mat2Of(m00: Number, m01: Number, m10: Number, m11: Number): IMatrix2 = Matrix2d(
+    override fun mat2Of(m00: Double, m01: Double, m10: Double, m11: Double): IMatrix2 = Matrix2d(
+            m00, m01,
+            m10, m11)
 
-            m00.toDouble(), m01.toDouble(),
-            m10.toDouble(), m11.toDouble())
+    override fun mutableMat2Of(m00: Double, m01: Double, m10: Double, m11: Double): IMutableMatrix2 = MutableMatrix2d(
+            m00, m01,
+            m10, m11)
 
-    override fun mutableMat2Of(m00: Number, m01: Number, m10: Number, m11: Number): IMutableMatrix2 = MutableMatrix2d(
+    override fun mat3Of(m00: Double, m01: Double, m02: Double,
+                        m10: Double, m11: Double, m12: Double,
+                        m20: Double, m21: Double, m22: Double): IMatrix3 = Matrix3d(
 
-            m00.toDouble(), m01.toDouble(),
-            m10.toDouble(), m11.toDouble())
+            m00, m01, m02,
+            m10, m11, m12,
+            m20, m21, m22)
 
-    override fun mat3Of(m00: Number, m01: Number, m02: Number,
-                        m10: Number, m11: Number, m12: Number,
-                        m20: Number, m21: Number, m22: Number): IMatrix3 = Matrix3d(
+    override fun mutableMat3Of(m00: Double, m01: Double, m02: Double,
+                               m10: Double, m11: Double, m12: Double,
+                               m20: Double, m21: Double, m22: Double): IMutableMatrix3 = MutableMatrix3d(
 
-            m00.toDouble(), m01.toDouble(), m02.toDouble(),
-            m10.toDouble(), m11.toDouble(), m12.toDouble(),
-            m20.toDouble(), m21.toDouble(), m22.toDouble())
+            m00, m01, m02,
+            m10, m11, m12,
+            m20, m21, m22)
 
-    override fun mutableMat3Of(m00: Number, m01: Number, m02: Number,
-                               m10: Number, m11: Number, m12: Number,
-                               m20: Number, m21: Number, m22: Number): IMutableMatrix3 = MutableMatrix3d(
+    override fun mat4Of(m00: Double, m01: Double, m02: Double, m03: Double,
+                        m10: Double, m11: Double, m12: Double, m13: Double,
+                        m20: Double, m21: Double, m22: Double, m23: Double,
+                        m30: Double, m31: Double, m32: Double, m33: Double): IMatrix4 = Matrix4d(
 
-            m00.toDouble(), m01.toDouble(), m02.toDouble(),
-            m10.toDouble(), m11.toDouble(), m12.toDouble(),
-            m20.toDouble(), m21.toDouble(), m22.toDouble())
+            m00, m01, m02, m03,
+            m10, m11, m12, m13,
+            m20, m21, m22, m23,
+            m30, m31, m32, m33)
 
-    override fun mat4Of(m00: Number, m01: Number, m02: Number, m03: Number,
-                        m10: Number, m11: Number, m12: Number, m13: Number,
-                        m20: Number, m21: Number, m22: Number, m23: Number,
-                        m30: Number, m31: Number, m32: Number, m33: Number): IMatrix4 = Matrix4d(
+    override fun mutableMat4Of(m00: Double, m01: Double, m02: Double, m03: Double,
+                               m10: Double, m11: Double, m12: Double, m13: Double,
+                               m20: Double, m21: Double, m22: Double, m23: Double,
+                               m30: Double, m31: Double, m32: Double, m33: Double): IMutableMatrix4 = MutableMatrix4d(
 
-            m00.toDouble(), m01.toDouble(), m02.toDouble(), m03.toDouble(),
-            m10.toDouble(), m11.toDouble(), m12.toDouble(), m13.toDouble(),
-            m20.toDouble(), m21.toDouble(), m22.toDouble(), m23.toDouble(),
-            m30.toDouble(), m31.toDouble(), m32.toDouble(), m33.toDouble())
-
-    override fun mutableMat4Of(m00: Number, m01: Number, m02: Number, m03: Number,
-                               m10: Number, m11: Number, m12: Number, m13: Number,
-                               m20: Number, m21: Number, m22: Number, m23: Number,
-                               m30: Number, m31: Number, m32: Number, m33: Number): IMutableMatrix4 = MutableMatrix4d(
-
-            m00.toDouble(), m01.toDouble(), m02.toDouble(), m03.toDouble(),
-            m10.toDouble(), m11.toDouble(), m12.toDouble(), m13.toDouble(),
-            m20.toDouble(), m21.toDouble(), m22.toDouble(), m23.toDouble(),
-            m30.toDouble(), m31.toDouble(), m32.toDouble(), m33.toDouble())
+            m00, m01, m02, m03,
+            m10, m11, m12, m13,
+            m20, m21, m22, m23,
+            m30, m31, m32, m33)
 }

@@ -7,62 +7,85 @@ import com.cout970.vector.api.IQuaternion
  * Created by cout970 on 03/09/2016.
  */
 
-data class Quaternioni(
-        override val x: Int,
-        override val y: Int,
-        override val z: Int,
-        override val w: Int
-): IQuaternion
-
 data class Quaternionf(
-        override val x: Float,
-        override val y: Float,
-        override val z: Float,
-        override val w: Float
-): IQuaternion
+        override val xf: Float,
+        override val yf: Float,
+        override val zf: Float,
+        override val wf: Float
+): IQuaternion {
+
+    //@formatter:off
+    override val x: Number get() = xf
+    override val y: Number get() = yf
+    override val z: Number get() = zf
+    override val w: Number get() = wf
+
+    override val xd: Double get() = xf.toDouble()
+    override val yd: Double get() = yf.toDouble()
+    override val zd: Double get() = zf.toDouble()
+    override val wd: Double get() = wf.toDouble()
+    //@formatter:on
+}
 
 data class Quaterniond(
-        override val x: Double,
-        override val y: Double,
-        override val z: Double,
-        override val w: Double
-): IQuaternion
+        override val xd: Double,
+        override val yd: Double,
+        override val zd: Double,
+        override val wd: Double
+): IQuaternion{
+
+    //@formatter:off
+    override val x: Number get() = xf
+    override val y: Number get() = yf
+    override val z: Number get() = zf
+    override val w: Number get() = wf
+
+    override val xf: Float get() = xd.toFloat()
+    override val yf: Float get() = yd.toFloat()
+    override val zf: Float get() = zd.toFloat()
+    override val wf: Float get() = wd.toFloat()
+    //@formatter:on
+}
 
 //mutable
 
-data class MutableQuaternioni(
-        var xf: Int,
-        var yf: Int,
-        var zf: Int,
-        var wf: Int
-): IMutableQuaternion {
-    override var x: Number get() = xf; set(i) { xf = i.toInt()}
-    override var y: Number get() = yf; set(i) { yf = i.toInt()}
-    override var z: Number get() = zf; set(i) { zf = i.toInt()}
-    override var w: Number get() = wf; set(i) { wf = i.toInt()}
-}
-
 data class MutableQuaternionf(
-        var xf: Float,
-        var yf: Float,
-        var zf: Float,
-        var wf: Float
+        override var xf: Float,
+        override var yf: Float,
+        override var zf: Float,
+        override var wf: Float
 ): IMutableQuaternion {
+
+    //@formatter:off
     override var x: Number get() = xf; set(i) { xf = i.toFloat()}
     override var y: Number get() = yf; set(i) { yf = i.toFloat()}
     override var z: Number get() = zf; set(i) { zf = i.toFloat()}
     override var w: Number get() = wf; set(i) { wf = i.toFloat()}
+
+    override var xd: Double get() = xf.toDouble(); set(i) { xf = i.toFloat()}
+    override var yd: Double get() = yf.toDouble(); set(i) { yf = i.toFloat()}
+    override var zd: Double get() = zf.toDouble(); set(i) { zf = i.toFloat()}
+    override var wd: Double get() = wf.toDouble(); set(i) { wf = i.toFloat()}
+    //@formatter:on
 }
 
 data class MutableQuaterniond(
-        var xf: Double,
-        var yf: Double,
-        var zf: Double,
-        var wf: Double
+        override var xd: Double,
+        override var yd: Double,
+        override var zd: Double,
+        override var wd: Double
 ): IMutableQuaternion {
-    override var x: Number get() = xf; set(i) { xf = i.toDouble()}
-    override var y: Number get() = yf; set(i) { yf = i.toDouble()}
-    override var z: Number get() = zf; set(i) { zf = i.toDouble()}
-    override var w: Number get() = wf; set(i) { wf = i.toDouble()}
+
+    //@formatter:off
+    override var xf: Float get() = xd.toFloat(); set(i) { xd = i.toDouble()}
+    override var yf: Float get() = yd.toFloat(); set(i) { yd = i.toDouble()}
+    override var zf: Float get() = zd.toFloat(); set(i) { zd = i.toDouble()}
+    override var wf: Float get() = wd.toFloat(); set(i) { wd = i.toDouble()}
+
+    override var x: Number get() = xd; set(i) { xd = i.toDouble()}
+    override var y: Number get() = yd; set(i) { yd = i.toDouble()}
+    override var z: Number get() = zd; set(i) { zd = i.toDouble()}
+    override var w: Number get() = wd; set(i) { wd = i.toDouble()}
+    //@formatter:on
 }
 

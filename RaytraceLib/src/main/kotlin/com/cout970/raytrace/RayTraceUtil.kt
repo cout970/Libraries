@@ -122,10 +122,10 @@ object RayTraceUtil {
             result = maxZ
         }
 
-        if (result == null) {
-            return null
+        return if (result == null) {
+            null
         } else {
-            return RayTraceResult(ray, result, obstacle)
+            RayTraceResult(ray, result, obstacle)
         }
     }
 
@@ -149,7 +149,7 @@ object RayTraceUtil {
             return null
         } else {
             val d3 = (x - start.xd) / diff.xd
-            return if (d3 >= 0.0 && d3 <= 1.0) start + (diff * d3) else null
+            return if (d3 in 0.0..1.0) start + (diff * d3) else null
         }
     }
 
@@ -160,7 +160,7 @@ object RayTraceUtil {
             return null
         } else {
             val d3 = (y - start.yd) / diff.yd
-            return if (d3 >= 0.0 && d3 <= 1.0) start + (diff * d3) else null
+            return if (d3 in 0.0..1.0) start + (diff * d3) else null
         }
     }
 
@@ -171,7 +171,7 @@ object RayTraceUtil {
             return null
         } else {
             val d3 = (z - start.zd) / diff.zd
-            return if (d3 >= 0.0 && d3 <= 1.0) start + (diff * d3) else null
+            return if (d3 in 0.0..1.0) start + (diff * d3) else null
         }
     }
 }

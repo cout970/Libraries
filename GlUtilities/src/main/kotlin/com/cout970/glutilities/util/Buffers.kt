@@ -2,7 +2,8 @@ package com.cout970.glutilities.util
 
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.api.IVector3
-import com.cout970.vector.extensions.*
+import com.cout970.vector.extensions.vec2Of
+import com.cout970.vector.extensions.vec3Of
 import org.lwjgl.BufferUtils
 import java.io.InputStream
 import java.nio.ByteBuffer

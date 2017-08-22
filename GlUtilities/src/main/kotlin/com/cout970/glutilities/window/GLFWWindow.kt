@@ -2,8 +2,6 @@ package com.cout970.glutilities.window
 
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.extensions.vec2Of
-import com.cout970.vector.extensions.xi
-import com.cout970.vector.extensions.yi
 import org.lwjgl.glfw.GLFW.*
 import java.io.Closeable
 

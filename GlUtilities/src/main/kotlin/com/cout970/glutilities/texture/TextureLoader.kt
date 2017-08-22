@@ -2,8 +2,6 @@ package com.cout970.glutilities.texture
 
 import com.cout970.glutilities.util.toByteBuffer
 import com.cout970.vector.extensions.vec2Of
-import com.cout970.vector.extensions.xi
-import com.cout970.vector.extensions.yi
 import org.lwjgl.BufferUtils
 import org.lwjgl.opengl.GL11.*
 import org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP
@@ -27,7 +25,7 @@ object TextureLoader {
     fun loadTexture(data: InputStream): TextureData {
         val image = data.toByteBuffer().apply { flip() }
 
-        if (STBImage.stbi_info_from_memory(image, IntArray(1), IntArray(1), IntArray(1)) == 0) {
+        if (!STBImage.stbi_info_from_memory(image, IntArray(1), IntArray(1), IntArray(1))) {
             throw IllegalStateException("Failed to load image information, Error: " + STBImage.stbi_failure_reason())
         }
 

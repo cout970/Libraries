@@ -7,7 +7,6 @@ import com.cout970.vector.api.IQuaternion
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.api.IVector3
 import com.cout970.vector.extensions.Quaternion
-import com.cout970.vector.extensions.toDegrees
 import com.cout970.vector.extensions.unaryMinus
 import com.cout970.vector.extensions.vec3Of
 
@@ -53,6 +52,6 @@ abstract class AbstractCamera : ICamera {
     }
 
     override fun toString(): String {
-        return "Camera(position=$position, rotations=${rotations.toDegrees()}, scale=$scale)"
+        return "Camera(position=$position, rotations=$rotations, scale=$scale)"
     }
 }

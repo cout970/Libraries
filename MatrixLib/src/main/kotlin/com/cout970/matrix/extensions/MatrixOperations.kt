@@ -3,6 +3,12 @@ package com.cout970.matrix.extensions
 import com.cout970.matrix.api.IMatrix2
 import com.cout970.matrix.api.IMatrix3
 import com.cout970.matrix.api.IMatrix4
+import com.cout970.vector.api.IVector2
+import com.cout970.vector.api.IVector3
+import com.cout970.vector.api.IVector4
+import com.cout970.vector.extensions.vec2Of
+import com.cout970.vector.extensions.vec3Of
+import com.cout970.vector.extensions.vec4Of
 
 /**
  * Created by cout970 on 27/08/2016.
@@ -83,4 +89,27 @@ operator fun IMatrix4.times(other: IMatrix4): IMatrix4 {
     val nm32 = m02d * other.m30d + m12d * other.m31d + m22d * other.m32d + m32d * other.m33d
     val nm33 = m03d * other.m30d + m13d * other.m31d + m23d * other.m32d + m33d * other.m33d
     return mat4Of(nm00, nm01, nm02, nm03, nm10, nm11, nm12, nm13, nm20, nm21, nm22, nm23, nm30, nm31, nm32, nm33)
+}
+
+//vector transformation
+
+operator fun IVector2.times(other: IMatrix2): IVector2 {
+    return vec2Of(
+            x = this.xd * other.m00d + this.yd * other.m10d,
+            y = this.xd * other.m01d + this.yd * other.m11d)
+}
+
+operator fun IVector3.times(other: IMatrix3): IVector3 {
+    return vec3Of(
+            x = this.xd * other.m00d + this.yd * other.m10d + this.zd * other.m20d,
+            y = this.xd * other.m01d + this.yd * other.m11d + this.zd * other.m21d,
+            z = this.xd * other.m02d + this.yd * other.m12d + this.zd * other.m22d)
+}
+
+operator fun IVector4.times(other: IMatrix4): IVector4 {
+    return vec4Of(
+            x = this.xd * other.m00d + this.yd * other.m10d + this.zd * other.m20d + this.wd * other.m30d,
+            y = this.xd * other.m01d + this.yd * other.m11d + this.zd * other.m21d + this.wd * other.m31d,
+            z = this.xd * other.m02d + this.yd * other.m12d + this.zd * other.m22d + this.wd * other.m32d,
+            w = this.xd * other.m03d + this.yd * other.m13d + this.zd * other.m23d + this.wd * other.m33d)
 }
