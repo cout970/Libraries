@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76dd06e5-de8c-4256-9811-1a5fbb5b588d" name="Default" comment="Added samples">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTC.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTNC.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/DrawMode.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Statistics.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoConsumer.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/util/FloatArrayList.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Samples/build.gradle.kts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/collisions/Collisions.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/texture/Texture.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/window/Window.kt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/AbstractCamera.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/OrthoCamera.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/PerspectiveCamera.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Buffer.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/IBuffer.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/IFormat.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/ITessellator.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Tessellator.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/format/FormatPC.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/format/FormatPCN.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/format/FormatPT.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/format/FormatPTN.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Collision.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Window.kt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CollisionLib/build.gradle.kts" afterPath="$PROJECT_DIR$/CollisionLib/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/build.gradle.kts" afterPath="$PROJECT_DIR$/GlUtilities/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/ICamera.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/ICamera.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/ShaderBuilder.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/ShaderBuilder.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/UniformVariable.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/UniformVariable.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GLStateMachine.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GLStateMachine.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GameLoop.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GameLoop.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/Timer.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/Timer.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoBuilder.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoBuilder.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoRegion.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoRegion.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWLoader.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWLoader.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWWindow.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWWindow.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/WindowBuilder.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/WindowBuilder.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Test.kt" afterPath="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Test.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MatrixLib/build.gradle.kts" afterPath="$PROJECT_DIR$/MatrixLib/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjLib/build.gradle.kts" afterPath="$PROJECT_DIR$/ObjLib/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RaytraceLib/build.gradle.kts" afterPath="$PROJECT_DIR$/RaytraceLib/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VectorLib/build.gradle.kts" afterPath="$PROJECT_DIR$/VectorLib/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/ApiTests.kt" afterPath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/ApiTests.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/FunctionTests.kt" afterPath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/FunctionTests.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/Util.kt" afterPath="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/Util.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle.kts" afterPath="$PROJECT_DIR$/build.gradle.kts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -143,8 +95,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="179" column="5" lean-forward="false" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+            <state relative-caret-position="335">
+              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2358,7 +2310,7 @@
       <workItem from="1504896462585" duration="12445000" />
       <workItem from="1504962314798" duration="684000" />
       <workItem from="1507390328240" duration="592000" />
-      <workItem from="1509538581667" duration="6363000" />
+      <workItem from="1509538581667" duration="6508000" />
     </task>
     <task id="LOCAL-00001" summary="Changed kobalt for gradle kotlin DSL&#10;Fixed performant issues">
       <created>1503365896294</created>
@@ -2410,7 +2362,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61703000" />
+    <option name="totallyTimeSpent" value="61848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2895,8 +2847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="179" column="5" lean-forward="false" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        <state relative-caret-position="335">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding />
         </state>
       </provider>
