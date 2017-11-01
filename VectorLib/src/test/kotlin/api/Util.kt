@@ -11,7 +11,7 @@ import org.junit.Assert
 
 val EPSILON = 1E-7
 
-fun assertEquals(a: IQuaternion, b: IQuaternion) {
+fun assertQuatEquals(a: IQuaternion, b: IQuaternion) {
     try {
         Assert.assertEquals(a.xd, b.xd, EPSILON)
         Assert.assertEquals(a.yd, b.yd, EPSILON)

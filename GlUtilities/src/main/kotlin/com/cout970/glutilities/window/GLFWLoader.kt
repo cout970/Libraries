@@ -7,19 +7,22 @@ import org.lwjgl.glfw.GLFW
  */
 object GLFWLoader {
 
-    var init = false
+    var loaded = false
         private set
 
     fun init() {
-        if (!init) {
-            init = true
+        if (!loaded) {
+            loaded = true
             if (!GLFW.glfwInit()) {
                 throw IllegalStateException("Error trying to initialize GLFW")
             }
-        }
+        } else throw IllegalStateException("GLFW already initialized")
     }
 
     fun terminate() {
-        GLFW.glfwTerminate()
+        if (loaded) {
+            loaded = false
+            GLFW.glfwTerminate()
+        } else throw IllegalStateException("GLFW already terminated")
     }
 }

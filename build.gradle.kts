@@ -1,7 +1,12 @@
 
+import org.gradle.kotlin.dsl.archives
+import org.gradle.kotlin.dsl.base
+import org.gradle.kotlin.dsl.dependencies
+import org.gradle.kotlin.dsl.java
+
 allprojects {
     group = "com.cout970"
-    version = "1.0"
+    version = "1.0.2"
 
 //    repositories {
 //        jcenter()
@@ -11,6 +16,7 @@ allprojects {
 
 plugins {
     base
+    java
 }
 
 dependencies {

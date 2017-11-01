@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" group="GlUtilities" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" group="GlUtilities" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Libraries.iml" filepath="$PROJECT_DIR$/.idea/modules/Libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Libraries_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Libraries_main.iml" group="Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Libraries_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Libraries_test.iml" group="Libraries" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib.iml" group="MatrixLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_main.iml" group="MatrixLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MatrixLib/MatrixLib_test.iml" group="MatrixLib" />
@@ -18,6 +20,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib.iml" group="RaytraceLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_main.iml" group="RaytraceLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RaytraceLib/RaytraceLib_test.iml" group="RaytraceLib" />
+      <module fileurl="file://$PROJECT_DIR$/Samples/Samples.iml" filepath="$PROJECT_DIR$/Samples/Samples.iml" group="Samples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Samples/Samples_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Samples/Samples_main.iml" group="Samples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Samples/Samples_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Samples/Samples_test.iml" group="Samples" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib.iml" group="VectorLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_main.iml" group="VectorLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorLib/VectorLib_test.iml" group="VectorLib" />

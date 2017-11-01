@@ -9,23 +9,23 @@ import org.lwjgl.system.MemoryUtil
 /**
  * Created by cout970 on 25/07/2016.
  */
-class WindowBuilder() {
+class WindowBuilder {
 
     var title = "GLFW Window"
     var pos: IVector2? = null
-    var size: IVector2 = vec2Of(100)
+    var size: IVector2 = vec2Of(200)
     var shared: Long = MemoryUtil.NULL
     var screen: Long = MemoryUtil.NULL
-    var vSync: Boolean = true
+    var vSync: Boolean = false
     var initGL = true
     var properties = mutableMapOf<Int, Int>()
 
-    fun create(other: Long = MemoryUtil.NULL): GLFWWindow {
+    fun create(): GLFWWindow {
 
-        if(!GLFWLoader.init) throw IllegalStateException("GLFW has not been initialized yet")
+        if (!GLFWLoader.loaded) throw IllegalStateException("GLFW has not been initialized yet")
 
         glfwDefaultWindowHints()
-        for((attr, value) in properties){
+        for ((attr, value) in properties) {
             glfwWindowHint(attr, value)
         }
 
@@ -34,18 +34,14 @@ class WindowBuilder() {
             throw RuntimeException("Failed to create a GLFW window")
         }
 
-        if(initGL) {
+        if (initGL) {
             glfwMakeContextCurrent(id)
             GL.createCapabilities()
         }
 
         val window = GLFWWindow(id)
 
-        if (pos != null) {
-            window.setPos(pos!!)
-        }else{
-            window.center()
-        }
+        pos?.let { window.setPos(it)  } ?: window.center()
 
         window.setVSync(vSync)
 

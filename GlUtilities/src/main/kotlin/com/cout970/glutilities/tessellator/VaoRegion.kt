@@ -8,16 +8,16 @@ import org.lwjgl.opengl.GL11
 data class VaoRegion(
         val offset: Int,
         val vertexCount: Int,
-        val drawMode: Int
+        val drawMode: DrawMode
 ) {
 
     fun draw(useElements: Boolean) {
         if (vertexCount <= 0) return
+
         if (useElements) {
-            //TODO : test this i'm not sure if is going to work with the offset
-            GL11.glDrawElements(drawMode, vertexCount, GL11.GL_UNSIGNED_INT, offset.toLong())
+            GL11.glDrawElements(drawMode.glMode, vertexCount, GL11.GL_UNSIGNED_INT, offset.toLong())
         } else {
-            GL11.glDrawArrays(drawMode, offset, vertexCount)
+            GL11.glDrawArrays(drawMode.glMode, offset, vertexCount)
         }
     }
 }

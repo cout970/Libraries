@@ -5,9 +5,6 @@ import com.cout970.glutilities.event.EventManager
 import com.cout970.glutilities.shader.ShaderBuilder
 import com.cout970.glutilities.structure.GLStateMachine
 import com.cout970.glutilities.structure.Timer
-import com.cout970.glutilities.tessellator.Tessellator
-import com.cout970.glutilities.tessellator.VAO
-import com.cout970.glutilities.tessellator.format.FormatPT
 import com.cout970.glutilities.texture.Texture
 import com.cout970.glutilities.texture.TextureLoader
 import com.cout970.glutilities.window.GLFWLoader
@@ -19,13 +16,11 @@ import java.io.FileInputStream
 import java.util.*
 
 fun main(args: Array<String>) {
-//    System.setProperty("org.lwjgl.librarypath", "I:/newWorkspace/Proyectos/Java_Kotlin/XLM/xlm/libs/native")
     Game2.init()
 }
 
 object Game2 {
 
-    lateinit var tessellator: Tessellator
     val tasks = Collections.synchronizedList(mutableListOf<() -> Unit>())
     val timer = Timer()
 
@@ -37,7 +32,6 @@ object Game2 {
         }
 
         val mouse = Mouse(window.id)
-        tessellator = Tessellator()
 
         val shader = ShaderBuilder.build {
             compile(GL20.GL_VERTEX_SHADER, shader_vertex)
@@ -45,15 +39,6 @@ object Game2 {
             bindAttribute(0, "pos")
             bindAttribute(1, "tex")
         }
-
-        val consumer = java.util.function.Consumer<VAO> {
-            it.bind()
-            it.bindAttrib()
-            it.draw()
-            it.unbindAttrib()
-            VAO.unbind()
-        }
-
 
         GLStateMachine.cullFace.disable()
 
@@ -91,33 +76,33 @@ object Game2 {
             shader.start()
             //no transparency
             texture1.bind()
-            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
-                set(0, -0.9, -0.9, 0).set(1, 1, 0).endVertex()
-                set(0, 0.9, -0.9, 0).set(1, 1, 1).endVertex()
-                set(0, 0.9, 0.9, 0).set(1, 0, 1).endVertex()
-                set(0, -0.9, 0.9, 0).set(1, 0, 0).endVertex()
-            }
+//            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
+//                set(0, -0.9, -0.9, 0).set(1, 1, 0).endVertex()
+//                set(0, 0.9, -0.9, 0).set(1, 1, 1).endVertex()
+//                set(0, 0.9, 0.9, 0).set(1, 0, 1).endVertex()
+//                set(0, -0.9, 0.9, 0).set(1, 0, 0).endVertex()
+//            }
 
 //            GL11.glDisable(GL11.GL_DEPTH_TEST)
             //texture transparency
 
             texture.bind()
-            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
-                set(0, -0.5, -0.5, 0).set(1, 1, 0).endVertex()
-                set(0, 0.5, -0.5, 0).set(1, 1, 1).endVertex()
-                set(0, 0.5, 0.5, 0).set(1, 0, 1).endVertex()
-                set(0, -0.5, 0.5, 0).set(1, 0, 0).endVertex()
-            }
+//            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
+//                set(0, -0.5, -0.5, 0).set(1, 1, 0).endVertex()
+//                set(0, 0.5, -0.5, 0).set(1, 1, 1).endVertex()
+//                set(0, 0.5, 0.5, 0).set(1, 0, 1).endVertex()
+//                set(0, -0.5, 0.5, 0).set(1, 0, 0).endVertex()
+//            }
 
 //            GL11.glDepthMask(false)
             // transparent
             texture.bind()
-            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
-                set(0, 0, 0, 0).set(1, 1, 0).endVertex()
-                set(0, 0.8, 0, 0).set(1, 1, 1).endVertex()
-                set(0, 0.8, 0.8, 0).set(1, 0, 1).endVertex()
-                set(0, 0, 0.8, 0).set(1, 0, 0).endVertex()
-            }
+//            tessellator.draw(GL11.GL_QUADS, FormatPT(), consumer) {
+//                set(0, 0, 0, 0).set(1, 1, 0).endVertex()
+//                set(0, 0.8, 0, 0).set(1, 1, 1).endVertex()
+//                set(0, 0.8, 0.8, 0).set(1, 0, 1).endVertex()
+//                set(0, 0, 0.8, 0).set(1, 0, 0).endVertex()
+//            }
 //            GL11.glDepthMask(true)
 
             shader.stop()

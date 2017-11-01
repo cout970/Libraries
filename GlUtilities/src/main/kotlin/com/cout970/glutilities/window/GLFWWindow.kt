@@ -3,6 +3,7 @@ package com.cout970.glutilities.window
 import com.cout970.vector.api.IVector2
 import com.cout970.vector.extensions.vec2Of
 import org.lwjgl.glfw.GLFW.*
+import org.lwjgl.opengl.GL11
 import java.io.Closeable
 
 /**
@@ -57,6 +58,11 @@ class GLFWWindow(
     fun setVSync(active: Boolean) = glfwSwapInterval(if (active) GLFW_TRUE else GLFW_FALSE)
 
     fun swapBuffers() = glfwSwapBuffers(id)
+
+    fun setDefaultViewport(){
+        val fbs = getFrameBufferSize()
+        GL11.glViewport(0, 0, fbs.xi, fbs.yi)
+    }
 
     fun getFrameBufferSize(): IVector2 {
         val x = intArrayOf(0)

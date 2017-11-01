@@ -27,7 +27,7 @@ class ShaderBuilder {
                 GL20.GL_VERTEX_SHADER -> "Vertex"
                 GL20.GL_FRAGMENT_SHADER -> "Fragment"
                 GL32.GL_GEOMETRY_SHADER -> "Geometry"
-                else -> "Unkknown"
+                else -> "Unknown"
             }
             val lines = code.split("\n")
             val finalCode = mutableListOf<String>()

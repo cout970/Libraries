@@ -18,6 +18,6 @@ class FunctionTests {
         val c = a * b
 
         val expected = Quaterniond(0.1, 0.2, 0.3, 0.4).mul(Quaterniond(0.5, 0.6, 0.7, 0.8)).toIQuat()
-        assertEquals(expected, c)
+        assertQuatEquals(expected, c)
     }
 }

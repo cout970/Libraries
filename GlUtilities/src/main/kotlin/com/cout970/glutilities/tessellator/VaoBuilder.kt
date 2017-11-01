@@ -11,20 +11,19 @@ import java.nio.IntBuffer
 /**
  * Created by cout970 on 30/07/2016.
  */
-class VaoBuilder(val longUse: Boolean = true) {
+class VaoBuilder(private val longUse: Boolean = true) {
 
-    var id: Int
-    val buffers = mutableListOf<Int>()
+    private var id: Int = GL30.glGenVertexArrays()
+    private val buffers = mutableListOf<Int>()
     private val regions = mutableListOf<VaoRegion>()
-    var useElements: Boolean = false
+    private var useElements: Boolean = false
     private var lastIndex = 0
 
     init {
-        id = GL30.glGenVertexArrays()
         GL30.glBindVertexArray(id)
     }
 
-    fun addRegion(drawMode: Int, count: Int){
+    fun addRegion(drawMode: DrawMode, count: Int){
         val reg = VaoRegion(lastIndex, count, drawMode)
         lastIndex += count
         regions.add(reg)
@@ -113,7 +112,5 @@ class VaoBuilder(val longUse: Boolean = true) {
         return this
     }
 
-    fun build(): VAO {
-        return VAO(id, buffers.size, buffers, useElements, regions)
-    }
+    fun build(): VAO = VAO(id, buffers.size, buffers, useElements, regions)
 }

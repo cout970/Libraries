@@ -224,22 +224,22 @@ class ApiTests {
         val xy180 = quatOfAxisAngled(180, 1, 1, 0)
         val xy270 = quatOfAxisAngled(270, 1, 1, 0)
         
-        assertEquals(identity, Quaternion.IDENTITY)
+        assertQuatEquals(identity, Quaternion.IDENTITY)
 
-        assertEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 90.0 ).toIQuat(), y90)
-        assertEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 45.0 ).toIQuat(), y45)
-        assertEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 180.0).toIQuat(), y180)
-        assertEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 270.0).toIQuat(), y270)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 90.0 ).toIQuat(), y90)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 45.0 ).toIQuat(), y45)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 180.0).toIQuat(), y180)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(0.0, 1.0, 0.0, 270.0).toIQuat(), y270)
 
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 90.0 ).toIQuat(), x90)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 45.0 ).toIQuat(), x45)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 180.0).toIQuat(), x180)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 270.0).toIQuat(), x270)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 90.0 ).toIQuat(), x90)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 45.0 ).toIQuat(), x45)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 180.0).toIQuat(), x180)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 0.0, 0.0, 270.0).toIQuat(), x270)
 
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 90.0 ).toIQuat(), xy90)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 45.0 ).toIQuat(), xy45)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 180.0).toIQuat(), xy180)
-        assertEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 270.0).toIQuat(), xy270)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 90.0 ).toIQuat(), xy90)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 45.0 ).toIQuat(), xy45)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 180.0).toIQuat(), xy180)
+        assertQuatEquals(Quaterniond().fromAxisAngleDeg(1.0, 1.0, 0.0, 270.0).toIQuat(), xy270)
         //@formatter:on
     }
 }

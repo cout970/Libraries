@@ -8,7 +8,9 @@ import com.cout970.vector.api.IVector2
  */
 interface ICamera {
 
-    fun getViewMatrix(): IMatrix4
+    fun getVPMatrix(viewPort: IVector2): IMatrix4
 
-    fun updateViewport(size: IVector2)
+    fun getView(): IMatrix4
+
+    fun getProjection(viewPort: IVector2): IMatrix4
 }

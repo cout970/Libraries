@@ -1,8 +1,9 @@
 package com.cout970.glutilities.structure
 
+import com.cout970.vector.api.IVector4
+import com.cout970.vector.extensions.vec4Of
 import org.lwjgl.opengl.*
 import org.lwjgl.opengl.GL11.*
-import java.awt.Color
 
 /**
  * Created by cout970 on 31/08/2016.
@@ -169,9 +170,9 @@ object GLStateMachine {
     val primitiveRestartFixedIndex = GLFlag(false, GL43.GL_PRIMITIVE_RESTART_FIXED_INDEX)
 
     //variables
-    var clearColor: Color = Color(0, 0, 0, 0)
+    var clearColor: IVector4 = vec4Of(0, 0, 0, 1)
         set(c) {
-            field = c; glClearColor(c.red / 255f, c.green / 255f, c.blue / 255f, c.alpha / 255f)
+            field = c; glClearColor(c.xf, c.yf, c.zf, c.wf)
         }
     var stencilFunc: Triple<GLFunc, Int, Int> = Triple(GLFunc.ALWAYS, 0, -1)
         set(c) {
@@ -182,27 +183,38 @@ object GLStateMachine {
             field = c; glBlendFunc(c.first.id, c.second.id)
         }
 
-
-
     fun clear() {
         glClear(GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT or GL_STENCIL_BUFFER_BIT)
         glClearDepth(1.0)
     }
 
-    fun pollErrors(): String? {
+    fun pollErrors(): List<Pair<Int, String>>{
+        var lastError = pollError()
+        val list = mutableListOf<Pair<Int, String>>()
+
+        while (lastError.first != GL_NO_ERROR){
+            lastError.second?.let {
+                list.add(lastError.first to it)
+            }
+            lastError = pollError()
+        }
+        return list
+    }
+
+    fun pollError(): Pair<Int, String?> {
         val error = glGetError()
         if (error != GL_NO_ERROR) {
-            when (error) {
-                GL_INVALID_ENUM -> return "GL_INVALID_ENUM"
-                GL_INVALID_VALUE -> return "GL_INVALID_VALUE"
-                GL_INVALID_OPERATION -> return "GL_INVALID_OPERATION"
-                GL_STACK_OVERFLOW -> return "GL_STACK_OVERFLOW"
-                GL_STACK_UNDERFLOW -> return "GL_STACK_UNDERFLOW"
-                GL_OUT_OF_MEMORY -> return "GL_OUT_OF_MEMORY"
-                else -> return "Unknown Error"
+            return error to when (error) {
+                GL_INVALID_ENUM -> "GL_INVALID_ENUM"
+                GL_INVALID_VALUE -> "GL_INVALID_VALUE"
+                GL_INVALID_OPERATION -> "GL_INVALID_OPERATION"
+                GL_STACK_OVERFLOW -> "GL_STACK_OVERFLOW"
+                GL_STACK_UNDERFLOW -> "GL_STACK_UNDERFLOW"
+                GL_OUT_OF_MEMORY -> "GL_OUT_OF_MEMORY"
+                else -> "Unknown Error"
             }
         }
-        return null
+        return GL_NO_ERROR to null
     }
 
     fun setFlag(id: Int, value: Boolean) = if (value) glEnable(id) else glDisable(id)
@@ -239,14 +251,14 @@ object GLStateMachine {
 
     enum class GLFunc(val id: Int) {
         //@formatter:off
-        NEVER(GL11.GL_NEVER),       //Always fails.
+        NEVER(GL11.GL_NEVER),       // Always fails.
         LESS(GL11.GL_LESS),         // <
         LEQUAL(GL11.GL_LEQUAL),     // <=
         GREATER(GL11.GL_GREATER),   // >
         GEQUAL(GL11.GL_GEQUAL),     // >=
         EQUAL(GL11.GL_EQUAL),       // ==
         NOTEQUAL(GL11.GL_NOTEQUAL), // !=
-        ALWAYS(GL11.GL_ALWAYS)      //Always passes.
+        ALWAYS(GL11.GL_ALWAYS)      // Always passes.
         //@formatter:on
     }
 

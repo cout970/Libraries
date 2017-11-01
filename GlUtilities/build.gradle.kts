@@ -1,4 +1,5 @@
 import org.gradle.internal.os.OperatingSystem
+import org.gradle.jvm.tasks.Jar
 import org.gradle.kotlin.dsl.*
 
 val os = OperatingSystem.current()!!
@@ -30,7 +31,7 @@ dependencies {
     compile("org.lwjgl:lwjgl:$lwjglVersion")
     compile("org.lwjgl:lwjgl-glfw:$lwjglVersion")
     compile("org.lwjgl:lwjgl-opengl:$lwjglVersion")
-    compile( "org.lwjgl:lwjgl-stb:$lwjglVersion")
+    compile("org.lwjgl:lwjgl-stb:$lwjglVersion")
 
 
     runtime("org.lwjgl:lwjgl:$lwjglVersion:$lwjglNatives")
@@ -39,4 +40,13 @@ dependencies {
 
 
     testCompile("junit:junit:4.11")
+}
+
+tasks {
+    "sourceJar"(Jar::class) {
+        from(java.sourceSets["main"].allSource, java.sourceSets["main"].output)
+    }
+    "build"{
+        dependsOn("sourceJar")
+    }
 }

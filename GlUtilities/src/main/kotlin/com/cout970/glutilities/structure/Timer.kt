@@ -38,13 +38,13 @@ open class Timer {
             get() = glfwGetTime()
 
         val miliTime: Double
-            get() = glfwGetTime() / 1000
+            get() = glfwGetTime() * 1_000.0
 
         val microTime: Double
-            get() = glfwGetTime() / (1000 * 1000)
+            get() = glfwGetTime() * 1_000_000.0
 
         val nanoTime: Double
-            get() = glfwGetTime() / (1000 * 1000 * 1000)
+            get() = glfwGetTime() * 1_000_000_000.0
 
     }
 }

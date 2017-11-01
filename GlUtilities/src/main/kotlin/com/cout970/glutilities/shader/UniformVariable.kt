@@ -37,7 +37,7 @@ open class UniformVariable(val uniformID: Int) {
     /**
      * Stores a 1 or 0 in the variable
      */
-    fun setBoolean(bool: Boolean) = glUniform1f(uniformID, if (bool) 1f else 0f)
+    fun setBoolean(bool: Boolean) = glUniform1i(uniformID, if (bool) 1 else 0)
 
     /**
      * Stores a Matrix4d in the variable
@@ -75,7 +75,7 @@ open class UniformVariable(val uniformID: Int) {
 
         fun setVector3(index: Int, f: IVector3) = glUniform3f(uniformID + index, f.xf, f.yf, f.zf)
 
-        fun setBoolean(index: Int, bool: Boolean) = glUniform1f(uniformID + index, (if (bool) 1 else 0).toFloat())
+        fun setBoolean(index: Int, bool: Boolean) = glUniform1i(uniformID + index, if (bool) 1 else 0)
 
         fun setMatrix4(index: Int, m: IMatrix4) {
             val buffer = MemoryUtil.memAllocFloat(16)
