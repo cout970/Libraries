@@ -178,3 +178,14 @@ gradle-app.setting
 
 # Custom
 *.xml
+.idea
+CollisionLib/out/production/classes/com/
+GlUtilities/out/production/classes/com/
+GlUtilities/out/test/classes/com/
+GlUtilities/src/test/resources/
+MatrixLib/out/production/classes/com/
+ObjLib/out/
+RaytraceLib/out/
+Samples/out/production/classes/com/
+VectorLib/out/production/classes/com/
+VectorLib/out/test/

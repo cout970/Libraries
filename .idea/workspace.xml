@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76dd06e5-de8c-4256-9811-1a5fbb5b588d" name="Default" comment="Added samples">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="76dd06e5-de8c-4256-9811-1a5fbb5b588d" name="Default" comment="Updated to 1.0.3">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/GlUtilities/GlUtilities_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -81,7 +83,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Libraries" type="f1a62948:ProjectNode" />
-                <item name=":Samples" type="2d1252cf:ModuleNode" />
+                <item name="Libraries" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Libraries" type="f1a62948:ProjectNode" />
+                <item name="Libraries" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Libraries" type="f1a62948:ProjectNode" />
+                <item name="Libraries" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -91,12 +106,22 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle.kts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -109,16 +134,14 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
-        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>project</find>
-      <find>project(</find>
       <find>Serializable</find>
       <find>assert</find>
       <find>==</find>
@@ -147,6 +170,8 @@
       <find>tasks</find>
       <find>view</find>
       <find>id</find>
+      <find>equals</find>
+      <find>bitmap</find>
     </findStrings>
     <replaceStrings>
       <replace>assertEquals</replace>
@@ -1921,12 +1946,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/VectorLib/src/test/kotlin/api/Util.kt" />
-        <option value="$PROJECT_DIR$/VectorNative/build.gradle.kts" />
-        <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/extensions/VectorConstants.kt" />
-        <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/extensions/VectorOperations.kt" />
-        <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/extensions/VectorUtilities.kt" />
-        <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/extensions/VectorConversion.kt" />
         <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/api/IQuaternion.kt" />
         <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/api/IVector2.kt" />
         <option value="$PROJECT_DIR$/VectorNative/src/main/kotlin/com/cout970/vector/api/IVector3.kt" />
@@ -1943,8 +1962,6 @@
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoConsumer.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/ICamera.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Buffer.kt" />
-        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTNC.kt" />
-        <option value="$PROJECT_DIR$/GlUtilities/build.gradle.kts" />
         <option value="$PROJECT_DIR$/CollisionLib/build.gradle.kts" />
         <option value="$PROJECT_DIR$/MatrixLib/build.gradle.kts" />
         <option value="$PROJECT_DIR$/ObjLib/build.gradle.kts" />
@@ -1952,7 +1969,6 @@
         <option value="$PROJECT_DIR$/VectorLib/build.gradle.kts" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/UniformVariable.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GameLoop.kt" />
-        <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GLStateMachine.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Test.kt" />
         <option value="$PROJECT_DIR$/settings.gradle" />
@@ -1964,13 +1980,22 @@
         <option value="$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Collision.kt" />
         <option value="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/collisions/Collisions.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWWindow.kt" />
-        <option value="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/window/Window.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Mode.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/DrawMode.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoBuilder.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoRegion.kt" />
         <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTC.kt" />
         <option value="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/texture/Texture.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/buffer/BytePointer.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTNC.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/buffer/NativeByteArray.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/util/Buffers.kt" />
+        <option value="$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/window/Window.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/memory/Utils.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/texture/TextureLoader.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/memory/Buffers.kt" />
+        <option value="$PROJECT_DIR$/GlUtilities/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -1995,7 +2020,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -2042,6 +2067,64 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="GlUtilities" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="GlUtilities" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="GlUtilities_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Samples_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Samples_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Samples_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="cout970" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Samples_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="cout970" type="1f31426a:PackageElementNode" />
+              <item name="example" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Samples" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Samples_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="cout970" type="1f31426a:PackageElementNode" />
+              <item name="example" type="1f31426a:PackageElementNode" />
+              <item name="window" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2049,19 +2132,23 @@
               <item name="Libraries" type="b2602c69:ProjectViewProjectNode" />
               <item name="Libraries" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="Libraries" type="58d84e3e:PackageViewProjectNode" />
-              <item name="GlUtilities" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Libraries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Libraries" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="CollisionLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Libraries" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="CollisionLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Libraries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Libraries" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="CollisionLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2075,15 +2162,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="SearchEverywhereHistoryKey" value="Quaterniond&#9;PSI&#9;JAVA://org.joml.Quaterniond" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="SearchEverywhereHistoryKey" value="BufferUtils&#9;PSI&#9;JAVA://org.lwjgl.BufferUtils&#10;ByteIterator&#9;null&#9;null&#10;IntIter&#9;null&#9;null&#10;Iterable&#9;PSI&#9;JAVA://java.lang.Iterable&#10;Quaterniond&#9;PSI&#9;JAVA://org.joml.Quaterniond" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Elm" />
     <property name="nodejs_interpreter_path" value="I:/Programs/Node/node" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\newWorkspace\Proyectos\Kotlin\Libraries\GlUtilities\src\main\kotlin\com\cout970\glutilities\memory" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.cout970.glutilities.tessellator" />
     </key>
@@ -2107,58 +2198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.cout970.example.window.WindowKt">
-    <configuration name="Libraries [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Libraries [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Libraries:GlUtilities [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/GlUtilities" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
+  <component name="RunManager" selected="Gradle.Libraries [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -2180,6 +2220,42 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="Libraries [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="Libraries:GlUtilities [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/GlUtilities" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -2200,11 +2276,41 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    <configuration name="com.cout970.example.window.WindowKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.cout970.example.window.WindowKt" />
+      <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Samples_main" />
+      <envs />
+    </configuration>
+    <configuration name="com.cout970.glutilities.buffer.NativeByteArrayKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.cout970.glutilities.buffer.NativeByteArrayKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GlUtilities_main" />
+      <envs />
+    </configuration>
+    <configuration name="com.example.TestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GlUtilities_test" />
+      <envs />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -2240,44 +2346,26 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="com.cout970.example.window.WindowKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.cout970.example.window.WindowKt" />
-      <option name="VM_PARAMETERS" />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Samples_main" />
-      <envs />
-    </configuration>
-    <configuration name="com.example.TestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.example.TestKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GlUtilities_test" />
-      <envs />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.Libraries [build]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.Libraries:GlUtilities [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.Libraries [assemble]" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.com.example.TestKt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.com.cout970.example.window.WindowKt" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.Libraries:GlUtilities [build]" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.com.example.TestKt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.com.cout970.example.window.WindowKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.com.cout970.glutilities.buffer.NativeByteArrayKt" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.Libraries [build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.com.cout970.example.window.WindowKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.com.example.TestKt" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.Libraries:GlUtilities [build]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.Libraries [assemble]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.Libraries [build]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.Libraries [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.com.cout970.example.window.WindowKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.com.cout970.glutilities.buffer.NativeByteArrayKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.com.example.TestKt" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.Libraries:GlUtilities [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -2310,7 +2398,15 @@
       <workItem from="1504896462585" duration="12445000" />
       <workItem from="1504962314798" duration="684000" />
       <workItem from="1507390328240" duration="592000" />
-      <workItem from="1509538581667" duration="6508000" />
+      <workItem from="1509538581667" duration="7510000" />
+      <workItem from="1509555285901" duration="605000" />
+      <workItem from="1509627033036" duration="3002000" />
+      <workItem from="1509651258848" duration="462000" />
+      <workItem from="1510169661194" duration="175000" />
+      <workItem from="1510336313923" duration="1774000" />
+      <workItem from="1510353262325" duration="111000" />
+      <workItem from="1510353405444" duration="374000" />
+      <workItem from="1510407495153" duration="794000" />
     </task>
     <task id="LOCAL-00001" summary="Changed kobalt for gradle kotlin DSL&#10;Fixed performant issues">
       <created>1503365896294</created>
@@ -2326,7 +2422,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509546118589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed useless files">
+      <created>1509546351763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509546351763</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated to 1.0.3">
+      <created>1510408237598</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510408237598</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2362,7 +2472,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61848000" />
+    <option name="totallyTimeSpent" value="70147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2377,35 +2487,41 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.14484127" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22934783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.14484127" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.85515875" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26279318" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22761194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26279318" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22826087" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin Bytecode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4008529" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2446,7 +2562,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed kobalt for gradle kotlin DSL&#10;Fixed performant issues" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Removed useless files" />
+    <MESSAGE value="Updated to 1.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to 1.0.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2455,343 +2573,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/native/org/gradle/internal/nativeintegration/filesystem/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/native/org/gradle/internal/nativeplatform/filesystem/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="20" column="88" lean-forward="true" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/lib/gradle-kotlin-dsl-0.11.0-SNAPSHOT.jar!/org/gradle/kotlin/dsl/ProjectExtensions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="153" column="14" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/tasks/bundling/AbstractArchiveTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/file/CopySpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="210" column="17" lean-forward="false" selection-start-line="210" selection-start-column="13" selection-end-line="210" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/internal/file/copy/CopySpecInternal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/base-services/org/gradle/internal/reflect/Instantiator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/platform-jvm/org/gradle/jvm/tasks/Jar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/internal/file/copy/DefaultCopySpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="210" column="37" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/tasks/AbstractCopyTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7113">
-          <caret line="203" column="42" lean-forward="false" selection-start-line="203" selection-start-column="31" selection-end-line="203" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/caches/wrapper/dists/gradle-kotlin-dsl-4.1-20170712173431+0000-all/curo1yjrpfjxf4ax8sd3uerd2/gradle-4.1-20170712173431+0000/src/core/org/gradle/api/tasks/bundling/Zip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CollisionLib/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjLib/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaytraceLib/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VectorLib/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatrixLib/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/UniformVariable.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="79" column="49" lean-forward="true" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GameLoop.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7920">
-          <caret line="389" column="11" lean-forward="false" selection-start-line="389" selection-start-column="11" selection-end-line="389" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/GLStateMachine.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="191" column="32" lean-forward="false" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/Statistics.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoConsumer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/IntBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="288" column="8" lean-forward="true" selection-start-line="288" selection-start-column="8" selection-end-line="288" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/FloatBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="271" column="18" lean-forward="true" selection-start-line="271" selection-start-column="18" selection-end-line="271" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWLoader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Window.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.1.2-SNAPSHOT/9d477206bd3c5f4d1e31acdbeccae47e3087ec49/lwjgl-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/system/MemoryUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/WindowBuilder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/structure/Timer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/ShaderBuilder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="59" column="64" lean-forward="false" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CollisionLib/src/main/kotlin/com/cout970/collision/internal/MutableBox3.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/shader/ShaderProgram.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/test/kotlin/com/example/Collision.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWWindow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/window/Window.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.1.2-SNAPSHOT/6f7a52fa0f3eab28b898436708e84fa51861966c/lwjgl-opengl-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/opengl/GL11.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="89" column="32" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="89" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VAO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoBuilder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoRegion.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTC.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/texture/Texture.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding>
-            <element signature="e#37#724#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2799,7 +2584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1577">
           <caret line="152" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2807,9 +2591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-          <folding>
-            <element signature="e#40#660#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2817,7 +2598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2825,30 +2605,327 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/Marker.kt" />
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/util/Tuples.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/VaoBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/DirectByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Byte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="456" column="22" lean-forward="false" selection-start-line="456" selection-start-column="22" selection-end-line="456" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/tessellator/BufferPTNC.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjLib/src/main/kotlin/com/cout970/obj/ElementsModelData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjLib/src/main/kotlin/com/cout970/obj/ObjModelData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjLib/src/main/kotlin/com/cout970/obj/OBJLoader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjLib/src/main/kotlin/com/cout970/obj/Face.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/jvm/internal/ArrayIterators.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/fd533d031dcdf086dfc75cfb9003c4349ed829aa/kotlin-stdlib-1.1.3-2-sources.jar!/kotlin/Iterators.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/Bits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="258" column="16" lean-forward="false" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/HeapByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="371" column="16" lean-forward="false" selection-start-line="371" selection-start-column="16" selection-end-line="371" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="400" column="25" lean-forward="false" selection-start-line="400" selection-start-column="25" selection-end-line="400" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="365" column="19" lean-forward="false" selection-start-line="365" selection-start-column="19" selection-end-line="365" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/SeekableByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1022">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/GatheringByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1833">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="261" column="22" lean-forward="false" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/ScatteringByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/InterruptibleChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/spi/AbstractInterruptibleChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="170" column="43" lean-forward="true" selection-start-line="170" selection-start-column="43" selection-end-line="170" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/FileChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8646">
+          <caret line="503" column="40" lean-forward="false" selection-start-line="503" selection-start-column="32" selection-end-line="503" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/Channels.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="353" column="31" lean-forward="true" selection-start-line="353" selection-start-column="31" selection-end-line="353" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/nio/channels/ReadableByteChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1291">
+          <caret line="105" column="15" lean-forward="false" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/buffer/NativeByteArray.kt" />
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/camera/ICamera.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.1.2-SNAPSHOT/9b3645db70b5acfab71d404f7cd2442bb7c94461/lwjgl-glfw-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/glfw/GLFW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/GLFWWindow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="57" column="86" lean-forward="false" selection-start-line="57" selection-start-column="86" selection-end-line="57" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/util/FloatArrayList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.1.2-SNAPSHOT/9d477206bd3c5f4d1e31acdbeccae47e3087ec49/lwjgl-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/BufferUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/window/WindowBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.1.2-SNAPSHOT/9d477206bd3c5f4d1e31acdbeccae47e3087ec49/lwjgl-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/system/MemoryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="156" column="78" lean-forward="false" selection-start-line="156" selection-start-column="71" selection-end-line="156" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/caches/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.1.2-SNAPSHOT/9d477206bd3c5f4d1e31acdbeccae47e3087ec49/lwjgl-3.1.2-SNAPSHOT-sources.jar!/org/lwjgl/system/MemoryStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="396" column="21" lean-forward="false" selection-start-line="396" selection-start-column="21" selection-end-line="396" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/texture/TextureLoader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/Marker.kt">
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/memory/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GlUtilities/src/main/kotlin/com/cout970/glutilities/memory/Buffers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#405#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Samples/src/main/kotlin/com/cout970/example/window/Window.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="151">
+          <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
           <folding />
         </state>
       </provider>
