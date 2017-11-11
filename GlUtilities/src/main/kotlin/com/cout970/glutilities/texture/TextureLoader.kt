@@ -1,6 +1,7 @@
 package com.cout970.glutilities.texture
 
-import com.cout970.glutilities.util.toByteBuffer
+import com.cout970.glutilities.memory.stackAlloc
+import com.cout970.glutilities.memory.toByteBuffer
 import com.cout970.vector.extensions.vec2Of
 import org.lwjgl.BufferUtils
 import org.lwjgl.opengl.GL11.*
@@ -29,14 +30,16 @@ object TextureLoader {
             throw IllegalStateException("Failed to load image information, Error: " + STBImage.stbi_failure_reason())
         }
 
-        val width = BufferUtils.createIntBuffer(1)
-        val height = BufferUtils.createIntBuffer(1)
-        val byteDepth = BufferUtils.createIntBuffer(1)
+        return stackAlloc {
+            val width = it.mallocInt(1)
+            val height = it.mallocInt(1)
+            val byteDepth = it.mallocInt(1)
 
-        val bitmap = STBImage.stbi_load_from_memory(image, width, height, byteDepth, 4) ?:
-                throw IllegalStateException("Failed to load image, Error: " + STBImage.stbi_failure_reason())
+            val bitmap = STBImage.stbi_load_from_memory(image, width, height, byteDepth, 4) ?:
+                         throw IllegalStateException("Failed to load image, Error: " + STBImage.stbi_failure_reason())
 
-        return TextureData(bitmap, vec2Of(width[0], height[0]), GL_RGBA, GL_RGBA)
+            TextureData(bitmap, vec2Of(width[0], height[0]), GL_RGBA, GL_RGBA)
+        }
     }
 
     /**

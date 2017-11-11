@@ -10,19 +10,18 @@ import com.cout970.vector.api.IVector3
 
 class BufferPTNC {
 
-    private val regions = mutableListOf<Pair<Int, Int>>()
+    private val regions = mutableListOf<Pair<DrawMode, Int>>()
     private var vertex = 0
-    private var mode = -1
+    private var mode: DrawMode? = null
 
     private val pos = FloatArrayList()
     private val tex = FloatArrayList()
     private val norm = FloatArrayList()
     private val col = FloatArrayList()
 
-    fun newRegion(mode: Int) {
-        require(mode > 0) { "Invalid mode: $mode" }
-        if (this.mode != -1) {
-            regions.add(Pair(this.mode, vertex))
+    fun newRegion(mode: DrawMode) {
+        this.mode?.let {
+            regions.add(Pair(mode, vertex))
             vertex = 0
         }
         this.mode = mode
@@ -43,7 +42,7 @@ class BufferPTNC {
         col.add(vcol.zf)
     }
 
-    fun build(mode: Int, longUse: Boolean = true, func: BufferPTNC.() -> Unit): VAO {
+    fun build(mode: DrawMode, longUse: Boolean = true, func: BufferPTNC.() -> Unit): VAO {
         var vao: VAO? = null
         pos.clear()
         tex.clear()
@@ -52,7 +51,7 @@ class BufferPTNC {
         vertex = 0
         this.mode = mode
         func(this)
-        regions.add(Pair(this.mode, vertex))
+        regions.add(Pair(mode, vertex))
 
         pos.useAsBuffer(tex, norm, col) { pos, tex, norm, col ->
             val builder = VaoBuilder(longUse)

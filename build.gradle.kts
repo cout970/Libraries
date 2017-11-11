@@ -6,12 +6,7 @@ import org.gradle.kotlin.dsl.java
 
 allprojects {
     group = "com.cout970"
-    version = "1.0.2"
-
-//    repositories {
-//        jcenter()
-//        mavenCentral()
-//    }
+    version = "1.0.3"
 }
 
 plugins {
