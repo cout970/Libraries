@@ -1,13 +1,10 @@
 package com.cout970.glutilities.structure
 
-import org.lwjgl.glfw.GLFW
-
 import org.lwjgl.glfw.GLFW.glfwGetTime
 
 open class Timer {
 
-    private var lastSecond: Double = 0.0
-    private var fpsCount: Int = 0
+    private val fpsData = mutableListOf<Double>()
     private var time: Double = 0.0
 
     var fps: Int = 0
@@ -16,20 +13,14 @@ open class Timer {
     var delta: Double = 0.0
         private set
 
-    init {
-        lastSecond = GLFW.glfwGetTime()
-    }
 
     fun tick() {
         delta = glfwGetTime() - time
         time = glfwGetTime()
 
-        fpsCount++
-        if (time - lastSecond >= 1) {
-            fps = fpsCount
-            fpsCount = 0
-            lastSecond = time
-        }
+        fpsData.add(time)
+        fpsData.removeAll { time - it >= 1 }
+        fps = fpsData.count()
     }
 
     companion object {

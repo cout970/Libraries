@@ -189,3 +189,4 @@ RaytraceLib/out/
 Samples/out/production/classes/com/
 VectorLib/out/production/classes/com/
 VectorLib/out/test/
+*.iml

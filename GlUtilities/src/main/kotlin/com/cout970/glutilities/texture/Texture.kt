@@ -41,8 +41,6 @@ data class Texture(
         magFilter = GL11.GL_LINEAR
         minFilter = GL11.GL_LINEAR
 
-        GL11.glMatrixMode(GL11.GL_TEXTURE)
-
         wrapS = GL11.GL_REPEAT
         wrapT = GL11.GL_REPEAT
         wrapW = GL11.GL_REPEAT
@@ -66,7 +64,7 @@ data class Texture(
 
         //mag and min filter values
         val PIXELATED = GL11.GL_NEAREST
-        val SMOOTH = GL11.GL_NEAREST
+        val SMOOTH = GL11.GL_LINEAR
 
         //wrap S/T/R values
         val REPEAT = GL11.GL_REPEAT

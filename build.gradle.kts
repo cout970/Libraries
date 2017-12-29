@@ -6,7 +6,7 @@ import org.gradle.kotlin.dsl.java
 
 allprojects {
     group = "com.cout970"
-    version = "1.0.3"
+    version = "1.0.4"
 }
 
 plugins {

@@ -20,7 +20,7 @@ import java.io.FileInputStream
  * Created by cout970 on 2017/11/01.
  */
 
-
+// TODO add texture files and fix rendering
 fun main(args: Array<String>) {
     GLFWLoader.init()
     val window = WindowBuilder.build {

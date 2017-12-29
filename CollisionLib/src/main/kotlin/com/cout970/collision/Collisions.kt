@@ -12,9 +12,11 @@ import com.cout970.vector.extensions.*
 
 fun IPolygon.collide(other: IPolygon): Boolean {
 
-    val lines = (this.getEdges() + other.getEdges()).map { (it.second - it.first).normalize() }.distinct().map { it.rotate(90.0) }
+    val edges = (this.getEdges() + other.getEdges())
+    val lines = edges.map { (it.second - it.first).normalize() }.distinct()
+    val perpendicularLines = lines.map { it.rotate(Math.toRadians(90.0)) }
 
-    return lines.all { intersects(it, this, other) }
+    return perpendicularLines.all { intersects(it, this, other) }
 }
 
 // 3D
@@ -23,9 +25,9 @@ fun IPolyhedron.collide(other: IPolyhedron): Boolean {
 
     val factor = 1024.0
 
-    val lines = (this.getNormals() + other.getNormals()).map { it.normalize() }.map {
-        it.transform { Math.round(it * factor) / factor }.normalize()
-    }.map {
+    val normals = (this.getNormals() + other.getNormals()).map { it.normalize() }
+    val lines = normals.map { it.transform { Math.round(it * factor) / factor }.normalize() }
+    val positiveLines = lines.map {
         if (it.xd < 0) {
             -it
         } else if (it.xd > 0) {
@@ -43,12 +45,13 @@ fun IPolyhedron.collide(other: IPolyhedron): Boolean {
                 }
             }
         }
-    }.map { it.transform { if (it == -0.0) 0.0 else it } }.distinct()
+    }
+    val distinctLines = positiveLines.map { it.transform { if (it == -0.0) 0.0 else it } }.distinct()
 
-    return lines.all { intersects(it, this, other) }
+    return distinctLines.all { intersects(it, this, other) }
 }
 
-//utilities
+// utilities
 
 private fun intersects(line: IVector2, a: IPolygon, b: IPolygon): Boolean {
     var max0: Double = Double.NEGATIVE_INFINITY
