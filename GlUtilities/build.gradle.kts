@@ -10,7 +10,8 @@ val lwjglNatives = when {
     else -> "natives-linux"
 }
 
-val lwjglVersion = "3.1.2-SNAPSHOT"
+version = "1.0.5"
+val lwjglVersion = "3.1.6-SNAPSHOT"
 
 plugins {
     kotlin("jvm")
@@ -33,10 +34,10 @@ dependencies {
     compile("org.lwjgl:lwjgl-opengl:$lwjglVersion")
     compile("org.lwjgl:lwjgl-stb:$lwjglVersion")
 
-
-    runtime("org.lwjgl:lwjgl:$lwjglVersion:$lwjglNatives")
-    runtime("org.lwjgl:lwjgl-glfw:$lwjglVersion:$lwjglNatives")
-    runtime("org.lwjgl:lwjgl-stb:$lwjglVersion:$lwjglNatives")
+    compile("org.lwjgl:lwjgl:$lwjglVersion:$lwjglNatives")
+    compile("org.lwjgl:lwjgl-glfw:$lwjglVersion:$lwjglNatives")
+    compile("org.lwjgl:lwjgl-opengl:$lwjglVersion:$lwjglNatives")
+    compile("org.lwjgl:lwjgl-stb:$lwjglVersion:$lwjglNatives")
 
 
     testCompile("junit:junit:4.11")

@@ -5,6 +5,8 @@ plugins {
     kotlin("jvm")
 }
 
+version = "1.0.4"
+
 repositories {
     jcenter()
     mavenCentral()

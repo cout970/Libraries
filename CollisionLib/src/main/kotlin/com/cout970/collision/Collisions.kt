@@ -14,7 +14,7 @@ fun IPolygon.collide(other: IPolygon): Boolean {
 
     val edges = (this.getEdges() + other.getEdges())
     val lines = edges.map { (it.second - it.first).normalize() }.distinct()
-    val perpendicularLines = lines.map { it.rotate(Math.toRadians(90.0)) }
+    val perpendicularLines = lines.map { it.rotateCW(Math.toRadians(90.0)) }
 
     return perpendicularLines.all { intersects(it, this, other) }
 }

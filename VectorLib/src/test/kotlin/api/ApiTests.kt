@@ -206,23 +206,23 @@ class ApiTests {
 
     @Test
     fun `Test Quaternion constructor from AxisAngled`() {
-        val identity = quatOfAxisAngled(0, 0, 0, 0)
+        val identity = quatOfAxisAngledDeg(0, 0, 0, 0)
 
         //@formatter:off
-        val y90  = quatOfAxisAngled( 90, 0, 1, 0)
-        val y45  = quatOfAxisAngled( 45, 0, 1, 0)
-        val y180 = quatOfAxisAngled(180, 0, 1, 0)
-        val y270 = quatOfAxisAngled(270, 0, 1, 0)
+        val y90  = quatOfAxisAngledDeg( 90, 0, 1, 0)
+        val y45  = quatOfAxisAngledDeg( 45, 0, 1, 0)
+        val y180 = quatOfAxisAngledDeg(180, 0, 1, 0)
+        val y270 = quatOfAxisAngledDeg(270, 0, 1, 0)
         
-        val x90  = quatOfAxisAngled( 90, 1, 0, 0)
-        val x45  = quatOfAxisAngled( 45, 1, 0, 0)
-        val x180 = quatOfAxisAngled(180, 1, 0, 0)
-        val x270 = quatOfAxisAngled(270, 1, 0, 0)
+        val x90  = quatOfAxisAngledDeg( 90, 1, 0, 0)
+        val x45  = quatOfAxisAngledDeg( 45, 1, 0, 0)
+        val x180 = quatOfAxisAngledDeg(180, 1, 0, 0)
+        val x270 = quatOfAxisAngledDeg(270, 1, 0, 0)
 
-        val xy90  = quatOfAxisAngled( 90, 1, 1, 0)
-        val xy45  = quatOfAxisAngled( 45, 1, 1, 0)
-        val xy180 = quatOfAxisAngled(180, 1, 1, 0)
-        val xy270 = quatOfAxisAngled(270, 1, 1, 0)
+        val xy90  = quatOfAxisAngledDeg( 90, 1, 1, 0)
+        val xy45  = quatOfAxisAngledDeg( 45, 1, 1, 0)
+        val xy180 = quatOfAxisAngledDeg(180, 1, 1, 0)
+        val xy270 = quatOfAxisAngledDeg(270, 1, 1, 0)
         
         assertQuatEquals(identity, Quaternion.IDENTITY)
 

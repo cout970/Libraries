@@ -62,9 +62,8 @@ object Game2 {
         while (!window.shouldClose()) {
             GLStateMachine.clear()
 
-            while (true) {
-                val str = GLStateMachine.pollErrors() ?: break
-                println(str)
+            for (error in GLStateMachine.pollErrors()) {
+                println(error)
             }
             timer.tick()
             mouse.update()

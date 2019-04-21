@@ -21,6 +21,7 @@ fun main(args: Array<String>) {
         vSync = false
     }
 
+
     while (!window.shouldClose()) {
 
         timer.tick()

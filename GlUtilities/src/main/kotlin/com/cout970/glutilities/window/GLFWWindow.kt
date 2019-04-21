@@ -47,7 +47,7 @@ class GLFWWindow(
 
     fun center() {
         val monitor = glfwGetWindowMonitor(id)
-        val vidmode = glfwGetVideoMode(if(monitor == 0L) glfwGetPrimaryMonitor() else monitor)
+        val vidmode = glfwGetVideoMode(if(monitor == 0L) glfwGetPrimaryMonitor() else monitor)!!
         glfwSetWindowPos(id, (vidmode.width() - getSize().xi) / 2, (vidmode.height() - getSize().yi) / 2)
     }
 

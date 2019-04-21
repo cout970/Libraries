@@ -13,13 +13,13 @@ import com.cout970.vector.api.*
 fun Pair<Number, Number>.toIVector2(): IVector2 = vec2Of(first, second)
 fun Triple<Number, Number, Number>.toIVector3(): IVector3 = vec3Of(first, second, third)
 
-inline fun IVector2.toVector3(z: Number): IVector3 = vec3Of(x, y, z)
-inline fun IVector2.toVector4(z: Number, w: Number): IVector4 = vec4Of(x, y, z, w)
-inline fun IVector3.toVector4(w: Number): IVector4 = vec4Of(x, y, z, w)
+inline fun IVector2.extend(z: Number): IVector3 = vec3Of(x, y, z)
+inline fun IVector2.extend(z: Number, w: Number): IVector4 = vec4Of(x, y, z, w)
+inline fun IVector3.extend(w: Number): IVector4 = vec4Of(x, y, z, w)
 
-inline fun IMutableVector2.toVector3(z: Number): IMutableVector3 = mutableVec3Of(x, y, z)
-inline fun IMutableVector2.toVector4(z: Number, w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
-inline fun IMutableVector3.toVector4(w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
+inline fun IMutableVector2.extend(z: Number): IMutableVector3 = mutableVec3Of(x, y, z)
+inline fun IMutableVector2.extend(z: Number, w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
+inline fun IMutableVector3.extend(w: Number): IMutableVector4 = mutableVec4Of(x, y, z, w)
 
 fun IVector2.toMutable(): IMutableVector2 = mutableVec2Of(x, y)
 fun IVector3.toMutable(): IMutableVector3 = mutableVec3Of(x, y, z)

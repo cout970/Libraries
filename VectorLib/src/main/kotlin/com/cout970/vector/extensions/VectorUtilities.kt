@@ -86,9 +86,14 @@ infix fun IVector3.angleCos(vec: IVector3): Double {
     return cos
 }
 
-fun IVector2.interpolate(other: IVector2, point: Double) = vec2Of(xd + (other.xd - xd) * point, yd + (other.yd - yd) * point)
-fun IVector3.interpolate(other: IVector3, point: Double) = vec3Of(xd + (other.xd - xd) * point, yd + (other.yd - yd) * point, zd + (other.zd - zd) * point)
-fun IVector4.interpolate(other: IVector4, point: Double) = vec4Of(xd + (other.xd - xd) * point, yd + (other.yd - yd) * point, zd + (other.zd - zd) * point, wd + (other.wd - wd) * point)
+fun IVector2.interpolate(other: IVector2, point: Double) =
+        vec2Of(xd * (1 - point) + other.xd * point, yd * (1 - point) + other.yd * point)
+
+fun IVector3.interpolate(other: IVector3, point: Double) =
+        vec3Of(xd * (1 - point) + other.xd * point, yd * (1 - point) + other.yd * point, zd * (1 - point) + other.zd * point)
+
+fun IVector4.interpolate(other: IVector4, point: Double) =
+        vec4Of(xd * (1 - point) + other.xd * point, yd * (1 - point) + other.yd * point, zd * (1 - point) + other.zd * point, wd * (1 - point) + other.wd * point)
 
 infix fun IVector2.middle(other: IVector2) = interpolate(other, 0.5)
 infix fun IVector3.middle(other: IVector3) = interpolate(other, 0.5)
@@ -102,7 +107,13 @@ fun IVector2.toDegrees() = transform { Math.toDegrees(it) }
 fun IVector3.toDegrees() = transform { Math.toDegrees(it) }
 fun IVector4.toDegrees() = transform { Math.toDegrees(it) }
 
-fun IVector2.rotate(angle: Double): IVector2 {
+fun IVector2.rotateCW(angle: Double): IVector2 {
+    val sin = Math.sin(-angle)
+    val cos = Math.cos(-angle)
+    return vec2Of(xd * cos - yd * sin, xd * sin + yd * cos)
+}
+
+fun IVector2.rotateCCW(angle: Double): IVector2 {
     val sin = Math.sin(angle)
     val cos = Math.cos(angle)
     return vec2Of(xd * cos - yd * sin, xd * sin + yd * cos)
@@ -168,7 +179,7 @@ fun IQuaternion.rotate(vec: IVector3): IVector3 {
             (xz2 - wy2) * vec.xd + (yz2 + wx2) * vec.yd + (1.0 - (x2sq + y2sq)) * vec.zd)
 }
 
-fun IVector4.fromAxisAngToQuat(): IQuaternion = quatOfAxisAngled(wd, xd, yd, zd)
+fun IVector4.fromAxisAngToQuat(): IQuaternion = quatOfAxisAngledDeg(wd, xd, yd, zd)
 
 infix fun IVector2.min(other: IVector2) = vec2Of(Math.min(xd, other.xd), Math.min(yd, other.yd))
 infix fun IVector3.min(other: IVector3) = vec3Of(Math.min(xd, other.xd), Math.min(yd, other.yd), Math.min(zd, other.zd))

@@ -35,10 +35,10 @@ data class Quaterniond(
 ): IQuaternion{
 
     //@formatter:off
-    override val x: Number get() = xf
-    override val y: Number get() = yf
-    override val z: Number get() = zf
-    override val w: Number get() = wf
+    override val x: Number get() = xd
+    override val y: Number get() = yd
+    override val z: Number get() = zd
+    override val w: Number get() = wd
 
     override val xf: Float get() = xd.toFloat()
     override val yf: Float get() = yd.toFloat()
